@@ -1,4 +1,10 @@
-
+---
+title: 'Probability density fitting of a GMM'
+date: 2020-01-17
+permalink: /posts/2020/01/gmm-optimization/
+tags:
+  - snippets
+---
 # Probability density fitting of a Mixture of two Gaussians via autograd
 
 Recently I've had to fit a [Mixture of two Gaussians](https://en.wikipedia.org/wiki/Mixture_model#Gaussian_mixture_model) to a target *density* instead of individual samples drawn from this density.
