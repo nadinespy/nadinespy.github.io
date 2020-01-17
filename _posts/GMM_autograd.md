@@ -1,5 +1,5 @@
 ---
-title: 'Probability density fitting of a GMM'
+title: "Probability density fitting of a GMM"
 date: 2020-01-17
 permalink: /posts/2020/01/gmm-optimization/
 tags:

@@ -1,11 +1,9 @@
 ---
 title: 'Probability density fitting of a GMM'
 date: 2020-01-17
-permalink: /posts/2012/08/blog-post-1/
+permalink: /posts/2020/01/gmm-optimization/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - snippets
 ---
 # Probability density fitting of a Mixture of two Gaussians via autograd
 
