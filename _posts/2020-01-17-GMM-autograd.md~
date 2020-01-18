@@ -5,14 +5,14 @@ permalink: /posts/2020/01/gmm-optimization/
 tags:
   - snippets
 ---
-# Probability density fitting of a Mixture of Gaussians via autograd
+# Probability density fitting of a Mixture of two Gaussians via autograd
 
-Recently I've had to fit a [Mixture of Gaussians](https://en.wikipedia.org/wiki/Mixture_model#Gaussian_mixture_model) to a target *density* instead of individual samples drawn from this density.
+Recently I've had to fit a [Mixture of two Gaussians](https://en.wikipedia.org/wiki/Mixture_model#Gaussian_mixture_model) to a target *density* instead of individual samples drawn from this density.
 Googling revealed that at least [one other person](https://stats.stackexchange.com/questions/226504/fit-gaussian-mixture-model-directly-to-the-mixture-density) faced this particular problem too, but there was no code readily available.
 
 To be clear, the problem is the following: given a mixture of Gaussian probability density that is evaluated at $N$ points, we want to recover parameters of these Gaussians (i.e. mean $\mu_{i}$, standard deviation $\sigma_{i}$, and a set of mixture weights $\pi_{i}$ that are constrained to be [0, 1] and sum to 1).
 
-For three Gaussians our objective is to find parameters of a Gaussian mixture that make its density match the blue line below (evaluated at $N=25$ points).
+For two Gaussians our objective is to find parameters of a Gaussian mixture that make its density match the blue line below (evaluated at $N=25$ points).
 
 
 ```python
@@ -20,37 +20,29 @@ from scipy import stats
 import autograd.numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline
-true_means = [5, 15, 20]
-true_stds = [2, 1, 2]
-true_pis = [0.3, 0.5, 0.2]
-
+m1 = 15
+m2 = 20
+std1 = 1
+std2 = 1
+pi = 0.8
 gridmin, gridmax, N = 0, 25, 75
 grid =  np.arange(gridmin, gridmax, (gridmax-gridmin)/N)
 
-data = np.array([
-    np.sum([pi*stats.norm.pdf(t, loc=m, scale=std)
-            for m, std, pi in zip(true_means, true_stds, true_pis)])
+data = np.array([pi*stats.norm.pdf(t, loc=m1, scale=std1)+(1-pi)*stats.norm.pdf(t, loc=m2, scale=std2)
                 for t in grid])
 plt.plot(data, label='Mixture probability density')
 plt.xlabel('Grid points')
 plt.ylabel('Density')
 ```
 
-
-
-
-    Text(0, 0.5, 'Density')
-
-
-
-
-![png](GMM_autograd_files/GMM_autograd_1_1.png)
+![](/images/GMM_autograd_1_1.png)
 
 
 What follows is my simple solution using autograd with the following caveats:
 * I estimate the distance between target probability density and our density via an $L2$ distance
-* Placing a prior on individual parameters will help in converging to a sensible solution (i.e. prevent standard deviation from exploding)
-* Initial parameters matter, it can be necessary to run the procedure multiple times and choose the solution with smallest loss
+* I circumvent setting up explicit constraints on $\pi$ by using the logit of $\pi$, which automatically constrains the 2 Gaussian case
+* I choose two Gaussians, i.e. I don't estimate the optimal number of Gaussians; to do so one can use cross-validation
+* The method is sensitive to the value of initial parameters
 
 ## The solution
 
@@ -66,27 +58,23 @@ from functools import partial
 def pdf(x, m, std):
     return (1/(std*np.sqrt(2*np.pi)))*np.exp(-0.5*((x-m)/std)**2)
 
-def gmm(t, means, stds, pis):
-    '''Returns the density of a mixture of Gaussians model estimated at grid point t.
-    means is a list of means of the gaussians
-    stds are logarithms of the standard deviation of the gaussians
-    pis is the mixing probability'''
-    density = np.sum([pi*pdf(t, mean, np.exp(std))
-                      for mean, std, pi in zip(means, stds, pis)])
-    return density
+def gmm(t, m1, m2, std1, std2, pi):
+    '''Returns the density of a mixture of 2 Gaussians model estimated at grid point t.
+    m1 and m2 are means of the two Gaussian
+    std1 and std2 are logarithms of the standard deviation of the two Gaussians
+    pi is the mixing probability (since it is constrained to sum to one we only need one in the 2 Gaussian case)'''
+    return pi*pdf(t, m1, np.exp(std1))+(1-pi)*pdf(t, m2, np.exp(std2))
 
-def loss_func(target_density, nested_params, grid=25):
+def loss_func(target_density, params, grid=25):
     '''Loss function for the model,
     target_density is an array of values for the target density,
     params is a list that contains m1, m2, std1, std2 and the logit of pi,
     grid can either be an int (in which case it is the argument supplied to range) or an iterable'''
-    means, stds, pis = nested_params
+    m1, m2, std1, std2, pi_prop = params
     if type(grid)==int:
         grid = range(grid)
-    # go from logits to probabilities
-    pis = [np.exp(pi) for pi in pis]
-    pis = [pi/np.sum(pis) for pi in pis]
-    our_density = np.array([gmm(t, means, stds, pis)
+    p = np.exp(pi_prop) / (np.exp(pi_prop) + 1)
+    our_density = np.array([gmm(t, m1, m2, std1, std2, p)
                 for t in grid])
     return np.sum((target_density-our_density)**2)
 
@@ -94,8 +82,8 @@ def loss_func(target_density, nested_params, grid=25):
 objective = partial(loss_func, data, grid=grid)
 
 # get a random guess for the mean
-randmean = np.random.randint(0, 25, 3).astype('float').tolist()
-initial_params = [randmean, [0., 0., 0.], [5., 5., 5.]]
+randmean = np.random.randint(0, 25, 2).astype('float').tolist()
+initial_params = randmean + [0., 0., 1.]
 
 # flatten everything so it plays nice with the optimizer
 flattened_obj, unflatten, flattened_init_params =\
@@ -109,23 +97,21 @@ from scipy.optimize import minimize
 res=minimize(flattened_obj, flattened_init_params,
          jac=gradf, method='BFGS')
 
-means, stds, pis = unflatten(res.x)
-pis = [np.exp(pi) for pi in pis]
-pis = [pi/np.sum(pis) for pi in pis]
-
-print('True parameters {}'.format(true_means+true_stds+true_pis))
-print('Recovered parameters {}'.format(means+[np.exp(std) for std in stds]+pis))
+m1_l, m2_l, std1_l, std2_l, pi_prop = res.x
+p = np.exp(pi_prop) / (np.exp(pi_prop) + 1)
+print('True parameters {}'.format([m1, m2, std1, std2, pi]))
+print('Recovered parameters {}'.format([m1_l, m2_l, np.exp(std1_l), np.exp(std2_l), p]))
 ```
 
-    True parameters [5, 15, 20, 2, 1, 2, 0.3, 0.5, 0.2]
-    Recovered parameters [array(5.00019487), array(20.0016879), array(15.00013811), 2.000017569259828, 1.99839559825986, 1.0001623730291136, 0.2999967947038737, 0.1999050817841846, 0.5000981235119417]
+    True parameters [15, 20, 1, 1, 0.8]
+    Recovered parameters [19.99999432837761, 14.999999725601715, 1.0000045596166873, 0.9999995374426933, 0.1999986294444458]
 
 
 ### Let's see if the results look right.
 
 
 ```python
-our_density = np.array([gmm(t, means, stds, pis)
+our_density = np.array([p*stats.norm.pdf(t, loc=m1_l, scale=np.exp(std1_l))+(1-p)*stats.norm.pdf(t, loc=m2_l, scale=np.exp(std2_l))
                 for t in grid])
 
 plt.plot(our_density, label='Estimated probability density', linewidth=3)
@@ -135,13 +121,5 @@ plt.ylabel('Density')
 plt.legend()
 ```
 
-
-
-
-    <matplotlib.legend.Legend at 0x7faca1391810>
-
-
-
-
-![png](GMM_autograd_files/GMM_autograd_6_1.png)
+![](/images/GMM_autograd_6_1.png)
 
