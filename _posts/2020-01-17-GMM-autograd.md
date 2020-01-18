@@ -35,7 +35,7 @@ plt.xlabel('Grid points')
 plt.ylabel('Density')
 ```
 
-![](mjboos.github.io/images/GMM_autograd_1_1.png)
+![](/images/GMM_autograd_1_1.png)
 
 
 What follows is my simple solution using autograd with the following caveats:
@@ -121,5 +121,5 @@ plt.ylabel('Density')
 plt.legend()
 ```
 
-![](mjboos.github.io/images/GMM_autograd_6_1.png)
+![](/images/GMM_autograd_6_1.png)
 
