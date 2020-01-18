@@ -43,15 +43,14 @@ plt.ylabel('Density')
 
 
 
-![png](images/GMM_autograd_1_1.png)
+![png](mjboos.github.io/images/GMM_autograd_1_1.png)
 
 
 What follows is my simple solution using autograd with the following caveats:
 * I estimate the distance between target probability density and our density via an $L2$ distance
-* I circumvent setting up explicit constraints on $\pi$ by using the logit of $\pi$, which automatically constrains the 2 Gaussian case, but this has to be adapted for more Gaussians
+* I circumvent setting up explicit constraints on $\pi$ by using the logit of $\pi$, which automatically constrains the 2 Gaussian case
 * I choose two Gaussians, i.e. I don't estimate the optimal number of Gaussians; to do so one can use cross-validation
-* Placing a prior on individual parameters might help
-* Initial parameters matter, it can be necessary to run the procedure multiple times and choose the solution with smallest loss
+* The method is sensitive to the value of initial parameters
 
 ## The solution
 
@@ -138,5 +137,5 @@ plt.legend()
 
 
 
-![png](images/GMM_autograd_6_1.png)
+![png](mjboos.github.io/images/GMM_autograd_6_1.png)
 
