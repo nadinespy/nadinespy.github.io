@@ -35,15 +35,7 @@ plt.xlabel('Grid points')
 plt.ylabel('Density')
 ```
 
-
-
-
-    Text(0, 0.5, 'Density')
-
-
-
-
-![png](mjboos.github.io/images/GMM_autograd_1_1.png)
+![](mjboos.github.io/images/GMM_autograd_1_1.png)
 
 
 What follows is my simple solution using autograd with the following caveats:
@@ -129,13 +121,5 @@ plt.ylabel('Density')
 plt.legend()
 ```
 
-
-
-
-    <matplotlib.legend.Legend at 0x7fc46fe75310>
-
-
-
-
-![png](mjboos.github.io/images/GMM_autograd_6_1.png)
+![](mjboos.github.io/images/GMM_autograd_6_1.png)
 
