@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Moritz Boos"
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   bio              : "PhD student at the University of Oldenburg, currently Visiting Scholar at Columbia University; I use machine learning in neuroimaging to understand how the brain processes speech"
   location         : "New York"
   employer         :
