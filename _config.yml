@@ -83,10 +83,10 @@ author:
   name             : "Moritz Boos"
   avatar           : "profile.jpg"
   bio              : "PhD student at the University of Oldenburg, currently Visiting Scholar at Columbia University; I use machine learning in neuroimaging to understand how the brain processes speech"
-  location         : "New York"
+  location         : "Oldenburg"
   employer         :
   pubmed           : ""
-  googlescholar    : ""
+  googlescholar    : "https://scholar.google.de/citations?user=iMjcWsAAAAAJ"
   email            : moritz.boos@gmail.com
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
