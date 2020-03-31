@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : mjoboos
 facebook:
   username               :
   app_id                 :
@@ -80,6 +80,7 @@ analytics:
 
 # Site Author
 author:
+  twitter          : mjoboos
   name             : "Moritz Boos"
   avatar           : "profile.jpg"
   bio              : "PhD student at the University of Oldenburg, currently Visiting Scholar at Columbia University; I use machine learning in neuroimaging to understand how the brain processes speech"
@@ -260,6 +261,7 @@ timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database
 
 # Plugins
 plugins:
+  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
