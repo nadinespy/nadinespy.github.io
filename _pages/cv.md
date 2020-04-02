@@ -8,4 +8,4 @@ redirect_from:
 ---
 
 {% include base_path %}
-You can download my current CV [here.](http://mjboos.github.io/files/nadinespychala_cv.pdf)
+You can download my current CV [here.](http://nadinespy.github.io/files/nadinespychala_cv.pdf)
