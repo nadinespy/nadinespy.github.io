@@ -5,7 +5,7 @@ output:
 
 title: "Rubber hand illusion increases pain caused by electric stimuli"
 collection: publications
-permalink: /publication/
+permalink: /publication/2017-08-30-Rubber-hand-illusion-increases-pain-caused-by-electrical-stimul-number-3
 excerpt: 'In this study, we investigated the relationship between pain and the rubber hand illusion (RHI) by inducing the RHI and stimulating the participants hands with electrical stimuli in a double-blind procedure. We found that electrical stimuli were experienced as more painful on the hand under the illusion, while being localized between the real and the rubber hand. This might suggest that uncertainty about the location of pain increases its intenstiy.' 
 date: 2017-08-30
 venue: 'The Journal of Pain'
