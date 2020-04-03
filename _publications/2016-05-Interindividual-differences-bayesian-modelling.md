@@ -2,7 +2,7 @@
 
 title: "Some title."
 collection: publications
-permalink: /publication/2016-05-Interindividual-differences-bayesian-modelling.md
+permalink: /publications/
 excerpt: 'Write shortly something about the study.'
 date: 2016-04-02
 venue: 'Where was is published?'
