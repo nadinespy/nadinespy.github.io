@@ -2,7 +2,7 @@
 
 title: "Exploring Self-Paced Embodiable Neurofeedback for Post-stroke Motor Rehabilitation"
 collection: publications
-permalink: /publication/
+permalink: /publication/2020-01-20-Exploring-Self-Paced-Embodiable-Neurofeedback-for-Post-stroke-Motor-Rehabilitation-number-1
 excerpt: ' In this study, we developed a self-paced neurofeedback motor-imagery training (NF-MIT) paradigm with an embodiable feedback signal (in our case, an anthropomorphic robotic hand), and tested its feasibility with both stroke patients and healthy controls. Results show that it can well complement classical approaches of NF-MIT and thus be beneficial in post-stroke motor rehabilitation.'
 date: 2020-01-20
 venue: 'Frontiers in Human Neuroscience'
