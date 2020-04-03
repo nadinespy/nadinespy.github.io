@@ -1,7 +1,6 @@
 ---
 title: "About Me"
 excerpt: This text will tell something about me
-output: md_document
 permalink: /about-me/
 redirect_from:
 - /about/
