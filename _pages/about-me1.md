@@ -1,6 +1,19 @@
-md\_document( variant = "markdown\_strict", preserve\_yaml = FALSE, toc
-= FALSE, toc\_depth = 3, fig\_width = 7, fig\_height = 5, fig\_retina =
-NULL, dev = "png", df\_print = "default", includes = NULL,
-md\_extensions = NULL, pandoc\_args = NULL, ext = ".md" )
+---
+output: 
+  html_document:
+    keep_md: true
+---
+
+---
+title: "Hello again!"
+excerpt: This text will tell something about me
+permalink: /about-me/
+redirect_from:
+- /about/
+- /about.html
+author_profile: yes
+---
 
 This text will tell a bit in more detail about me. :)
+
+
