@@ -2,7 +2,6 @@
 title: "Exploring Self-Paced Embodiable Neurofeedback for Post-stroke Motor Rehabilitation"
 collection: publications
 permalink: /publication/2020-01-20-Exploring-Self-Paced-Embodiable-Neurofeedback-for-Post-stroke-Motor-Rehabilitation-number-1
-excerpt:
 date: 2020-01-20
 venue: 'Frontiers in Human Neuroscience'
 paperurl: 'https://www.frontiersin.org/articles/10.3389/fnhum.2019.00461/full'
