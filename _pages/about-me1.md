@@ -2,9 +2,7 @@
 output: 
   html_document:
     keep_md: true
----
 
----
 title: "Hello again!"
 excerpt: This text will tell something about me
 permalink: /about-me/
