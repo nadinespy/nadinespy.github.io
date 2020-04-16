@@ -9,7 +9,6 @@ permalink: /posts/2020/04/some_blog_post/
 tags:
   - snippets
 ---
-% # Write something clever
 
 Ever wondered how to use **bootstrapping** for null hypothesis significance testing (NHST) in a **2-way mixed effects model**? In my brain-computer interface study (which you can have a look at [here](https://www.frontiersin.org/articles/10.3389/fnhum.2019.00461/full)), I had to do exactly this in order to properly calculate ANOVAs. As I was searching for solutions in the world wide web, I realized that there was no showcase readily applicable to precisely my problem. 
 
@@ -92,11 +91,11 @@ As a next step, we randomly resample with replacement 20 cases (the size of our 
 
 You can download the R markdown file [here](https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrapping_in_2way_rm_anova.Rmd), and the source code of bootstrap_2way_rm_anova() [here](https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrap_2way_rm_anova.R).
 
-```{r}
+```r
 bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, within_subjects_factor, id, number_of_bootstraps){
 ```
 ### allocate variables and perform statistical test with original data
-```{r}
+```r
   # convert variables numeric vectors (if originally provided in dataframe format) 
   response_variable = data.matrix(response_variable)
   between_subjects_factor = data.matrix(between_subjects_factor)
@@ -117,12 +116,15 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   FVector_interaction = numeric()
 ```
 ### centering
-```{r}
+```r
   # derive number of levels in within-subjects factor (either 2 or 3)
-  number_of_levels = length(seq(range(within_subjects_factor)[1], range(within_subjects_factor)[2],by=1))
+  number_of_levels = length(seq(range(within_subjects_factor)[1],
+  range(within_subjects_factor)[2],by=1))
   split = nrow(response_variable)/number_of_levels
   
-  # centering the within-subjects factor: calculate means of response variable for different levels of within-subject factor, and subtract them from the respective level (either for the case of 2 or 3 levels)
+  # centering the within-subjects factor: calculate means of response variable for
+  # different levels of within-subject factor, and subtract them from the respective level
+  # (either for the case of 2 or 3 levels)
   if (number_of_levels ==3){
     mean1 = mean(response_variable[1:split])
     mean2 = mean(response_variable[(split+1):(split*2)])
@@ -130,7 +132,8 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
     
     response_variable[1:split] = response_variable[1:split]-mean1
     response_variable[(split+1):(split*2)] = response_variable[(split+1):(split*2)]-mean2
-    response_variable[(split*2+1):(split*3)] = response_variable[(split*2+1):(split*3)]-mean3
+    response_variable[(split*2+1):(split*3)] =
+    response_variable[(split*2+1):(split*3)]-mean3
   } else {
     mean1 = mean(response_variable[1:split])
     mean2 = mean(response_variable[(split+1):(split*2)])
@@ -140,7 +143,7 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   }
 ```
 ### resampling
-```{r}
+```r
   # determine number of repetitions for resampling
   n = number_of_bootstraps
   
@@ -156,31 +159,41 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
     # response variable after centering
     if (number_of_levels ==3){
       set.seed(index1[i])
-      resample_response_from_third_level =   sample(response_variable[(split*2+1):(split*3)], split, replace = T)  
+      resample_response_from_third_level =
+      sample(response_variable[(split*2+1):(split*3)], split, replace = T)  
       set.seed(index1[i])
-      resample_response_from_first_level = sample(response_variable[1:split], split, replace = T)
+      resample_response_from_first_level = sample(response_variable[1:split], split,
+      replace = T)
       set.seed(index1[i])
-      resample_response_from_second_level = sample(response_variable[(split+1):(split*2)], split, replace = T)
+      resample_response_from_second_level = sample(response_variable[(split+1):(split*2)],
+      split, replace = T)
     } else {
       set.seed(index1[i])
-      resample_response_from_first_level = sample(response_variable[1:split], split, replace = T)
+      resample_response_from_first_level = sample(response_variable[1:split], split,
+      replace = T)
       set.seed(index1[i])
-      resample_response_from_second_level = sample(response_variable[(split+1):(split*2)], split, replace = T)
+      resample_response_from_second_level = sample(response_variable[(split+1):(split*2)],
+      split, replace = T)
     }
     # shuffling of between-subject factor
     set.seed(index2[i])
-    resample_between_subjects_factor = t(t(sample(between_subjects_factor, nrow(between_subjects_factor), replace = T)))
+    resample_between_subjects_factor = t(t(sample(between_subjects_factor,
+    nrow(between_subjects_factor), replace = T)))
     
     # concatenate response variable from the single levels
     if (number_of_levels ==3){
-      resample_response = rbind(t(t(resample_response_from_first_level)),t(t(resample_response_from_second_level)), t(t(resample_response_from_third_level)))
-    } else {resample_response = rbind(t(t(resample_response_from_first_level)),t(t(resample_response_from_second_level)))
+      resample_response = rbind(t(t(resample_response_from_first_level)),
+      t(t(resample_response_from_second_level)), t(t(resample_response_from_third_level)))
+    } else {resample_response = rbind(t(t(resample_response_from_first_level)),
+    t(t(resample_response_from_second_level)))
     }
 ```
 ### calculate ANOVA for boostrapped data
-```{r}
+```r
     # recalculate anova using new response variable and shuffled between subject-factor
-    rm_anova_simulation = anova(lme(resample_response ~ resample_between_subjects_factor*within_subjects_factor, random=~1 | d, method="ML", control=lmeControl(singular.ok=TRUE)))  
+    rm_anova_simulation = anova(lme(resample_response ~
+    resample_between_subjects_factor*within_subjects_factor, random=~1 | d, method="ML",
+    control=lmeControl(singular.ok=TRUE)))  
     
     # store F-values for each factor as well as their interaction
     FVector_between_subjects_factor[i] = as.numeric(rm_anova_simulation[2,3])
@@ -189,19 +202,26 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   }
 ```
 ### locate F-value of original dataset within empirical F-distribution
-```{r}
-  # bootstrap p-value for between-subjects factor: check proportion of F-values larger than the observed one
-  bootstrap_pValue_between_subjects_factor = length(which(FVector_between_subjects_factor>FValue_between_subjects_factor))/n
+```r
+  # bootstrap p-value for between-subjects factor: check proportion of F-values larger
+  # than the observed one
+  bootstrap_pValue_between_subjects_factor =
+  length(which(FVector_between_subjects_factor>FValue_between_subjects_factor))/n
   
-  # bootstrap p-value for within-subjects factor: check proportion of F-values larger than the observed one
- bootstrap_pValue_within_subjects_factor = length(which(FVector_within_subjects_factor>FValue_within_subjects_factor))/n
+  # bootstrap p-value for within-subjects factor: check proportion of F-values larger than
+  # the observed one
+ bootstrap_pValue_within_subjects_factor =
+ length(which(FVector_within_subjects_factor>FValue_within_subjects_factor))/n
   
-  # bootstrap p-value for interaction: check proportion of F-values larger than the observed one
+  # bootstrap p-value for interaction: check proportion of F-values larger than the
+  # observed one
   bootstrap_pValue_interaction = length(which(FVector_interaction>FValue_interaction))/n
   
   # concatenate all p-values
-  FValues = rbind(FValue_between_subjects_factor, FValue_within_subjects_factor, FValue_interaction)
-  bootstrap_pValues = rbind(bootstrap_pValue_between_subjects_factor, bootstrap_pValue_within_subjects_factor, bootstrap_pValue_interaction)
+  FValues = rbind(FValue_between_subjects_factor, FValue_within_subjects_factor,
+  FValue_interaction)
+  bootstrap_pValues = rbind(bootstrap_pValue_between_subjects_factor,
+  bootstrap_pValue_within_subjects_factor, bootstrap_pValue_interaction)
   
   # replace p-values in original anova
   rm_anova[2:nrow(rm_anova), "p-value"] = bootstrap_pValues
