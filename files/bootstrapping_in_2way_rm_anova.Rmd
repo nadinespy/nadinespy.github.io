@@ -1,0 +1,36 @@
+---
+title: "A bootstrapping function for a two-way mixed effects ANOVA"
+author: "Nadine Spychala"
+date: "April 8, 2020"
+output: 
+  html_document:
+    df_print: paged
+  html_notebook:
+    self_contained: no
+---
+
+```{r include = FALSE}
+
+# load necessary functions
+setwd("/mydir/not_for_upload_in_git/blog_post_bootstrapping/")
+
+source("bootstrap_two_way_rm_anova.R")
+
+# number of subjects
+n = 20
+
+set.seed(10)
+a <- rnorm(29, 2, 2)
+set.seed(20)
+b <- rnorm(3, 6, 1)
+set.seed(30)
+c <- rnorm(8, 8, 1)
+weight_loss <- cbind(c(a, b, c))
+sport_intervention = matrix(c(rep(0, n), rep(1, n)))
+diet = matrix(c(rep(0,n/2), rep(1,n/2), rep(0,n/2), rep(1,n/2)))
+id = matrix(c(1:n,1:n))
+
+rm_anova_weight_loss_bootstrap = bootstrap_2way_rm_anova_using_boot(weight_loss, diet, sport_intervention, id, 3000)
+
+```
+
