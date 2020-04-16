@@ -61,12 +61,12 @@ Now we call bootstrap_2way_rm_anova() - the function I wrote (rm stands for repe
 ## bootstrap_2way_rm_anova()
 This function requires a response variable, the between-subjects and within-subjects factor, a subject indicator variable as well as the number of bootstraps to be performed (here, we decide for 3000) as input variables. 
 
-```{r}
-rm_anova_weight_loss_bootstrap = bootstrap_two_way_rm_anova(weight_loss, diet, sport_intervention, id, 3000)
+```r
+rm_anova_weight_loss_bootstrap = bootstrap_2way_rm_anova(weight_loss, diet, sport_intervention, id, 3000)
 ```
 The output is as given by anova(), but with bootstrap p-values instead:
 
-```{r}
+```r
 > rm_anova_weight_loss_bootstrap
                                                numDF denDF   F-value p-value
 (Intercept)                                        1    18 117.72286  <.0001
