@@ -90,6 +90,8 @@ We solve this problem by performing a centering of the within-subject factor, i.
 
 As a next step, we randomly resample with replacement 20 cases (the size of our original sample) of the centered data, while preserving the allocation of WT and E to the same subject, and randomizing the assigned diet. This is now our _bootstrapped_ dataset. We compute a 2-way mixed ANOVA from this dataset, and store the F-value. We repeat this process a number of times, each time calculating and storing the F-value. Now, to determine the p-value, we place the F-value of our original sample within the distribution of F-values that we obtained via repeating the procedure described above. Finally, we check, if the proportion of F-values larger than the observed one is below 5% (or whatever your threshold in your significance tests might be) or not. Based on this, we can assume either an effect or no effect.
 
+You can download the R markdown file [here](https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrapping_in_2way_rm_anova.Rmd), and the source code of bootstrap_2way_rm_anova() [here](https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrap_2way_rm_anova.R).
+
 ```{r}
 bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, within_subjects_factor, id, number_of_bootstraps){
 ```
@@ -206,45 +208,3 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   return(rm_anova)
 }
 ```
-
-```python
-# copy paste some code
-```
-```python
-# ![](/images/GMM_autograd_1_1.png)
-```
-
-
-
-What follows is my simple solution using autograd with the following caveats:
-* point 1
-* point 2
-* point 3
-
-## The solution
-
-
-```python
-# again some code
-```
-
-
-### Let's see if the results look right.
-
-```python
-# code code code
-```
-```python
-# ![](/images/GMM_autograd_6_1.png)
-```
-
-You can download the R markdown file [here](http://mjboos.github.io/files/GMM_autograd.ipynb).
-
-
-
-
-
-The way the F-distribution is obtained is different to how one would yield it using [boot()](https://www.statmethods.net/advstats/bootstrapping.html). In bootstrap_2way_rm_anova(), a new null distribution is created using centering, shuffling and resampling (with replacement) the number of times you want to bootstrap the F-statistic, and the F-statistic is calculated for each of the newly created null distributions. Using boot(), only one null distribution would be created, from which resamples with replacement would be drawn the number of times you want to do the bootstrapping, and the F-statistic would calculated for each of the resamples from the same null data. A second version of my bootstrapping function, which implements boot() didn't work most of the time, as it  Out of curiosity, I integrated boot() in a second version of my bootstrapping function, and it didn't work most of the time, but gave me singularity errors. 
-
-
-
