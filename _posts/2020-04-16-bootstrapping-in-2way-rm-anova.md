@@ -5,7 +5,7 @@ output:
     
 title: "A bootstrapping function for a two-way mixed effects ANOVA"
 date: 2020-02-04
-permalink: /posts/2020/04/some_blog_post/
+permalink: /posts/2020/04/bootstrapping-function-for-2way-mixed-effects-ANOVA/
 tags:
   - snippets
 ---
