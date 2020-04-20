@@ -10,13 +10,13 @@ tags:
   - snippets
 ---
 
-Ever wondered how to use **bootstrapping** for null hypothesis significance testing (NHST) in a **2-way mixed effects model**? 
+Ever wondered how to use **bootstrapping** for statistical testing in a **two-way mixed effects model**? 
 
 In my brain-computer interface study (which you can have a look at [here](https://www.frontiersin.org/articles/10.3389/fnhum.2019.00461/full)), I had to do exactly this in order to properly calculate ANOVAs. As I was searching for solutions in the world wide web, I realized that there was no showcase readily applicable to precisely my problem. 
 
 There is a lot on methods of bootstrapping in general (a classical source is this [book](https://books.google.de/books/about/An_Introduction_to_the_Bootstrap.html?id=gLlpIUxRntoC&redir_esc=y) written by Bradley Efron and Robert J. Tibshirani), and some people have developed methods for their studies involving one- and two-way fixed effects models (see, e. g., this [study](https://www.jstor.org/stable/24309529?seq=1) about gene classification), or looked at specific cases of these models (see, e. g., this [study](https://www.sciencedirect.com/science/article/pii/S0047259X12002394) on bootstrapping in models with unequal variances), or written built-in functions in R (e. g., [ANOVA.boot()](https://www.rdocumentation.org/packages/lmboot/versions/0.0.1/topics/ANOVA.boot), which distinguishes between the so-called _residual_ and the _wild_ bootstrap, both of which have different assumptions about the error terms involved), but neither did studies seem to have used bootstrapping in two-way mixed effects models nor have any functions been developed for these sort of models. 
 
-When using bootstrapping in NHST, it all comes down to the question how to create the null distribution based on the real data. Whereas it is quite clear how to treat between-subject factors in this respect, it is less straightforward what to do with within-subject factors. 
+When using bootstrapping in null hypothesis significance testing, it all comes down to the question how to create the null distribution based on the real data. Whereas it is quite clear how to treat between-subject factors in this respect, it is less straightforward what to do with within-subject factors. 
 
 A methodological paper written by [Berkovits, Hancock, and Nevitt (2000)](https://journals.sagepub.com/doi/10.1177/00131640021970961) filled the gap: These authors proposed a bootstrapping method for a one-way repeated measure ANOVA design using _centering_ (more about this below).
 
@@ -76,7 +76,7 @@ It seems like there is an effect of both diet and sport intervention on weight l
 
 Now let's look into the function and see what it exactly does.
 
-The general idea behind using bootstrapping for NHST is to resample from the given data such that we obtain a null distribution against which we test our statistic. By repeating this process a couple of times, we obtain a distribution of F-values, in which we then place the F-value of our original sample to derive a p-value.
+The general idea behind using bootstrapping for statistical tests is to resample from the given data such that we obtain a null distribution against which we test our statistic. By repeating this process a couple of times, we obtain a distribution of F-values, in which we then place the F-value of our original sample to derive a p-value.
 
 In the code, we first allocate variables and perform the statistical test with the original data.
 
