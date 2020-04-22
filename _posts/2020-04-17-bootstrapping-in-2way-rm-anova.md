@@ -36,9 +36,6 @@ Let's create some dummy data representing this model.
 # number of subjects
 n = 20
 
-# number of subjects
-n = 20
-
 set.seed(10)
 a <- rnorm(29, 2, 2)
 set.seed(20)
@@ -65,7 +62,7 @@ rm_anova_weight_loss_bootstrap = bootstrap_2way_rm_anova(weight_loss, diet, spor
 The output is as given by anova(), but with bootstrap p-values instead:
 
 ```r
-> rm_anova_weight_loss_bootstrap_current
+> rm_anova_weight_loss_bootstrap
                                                numDF denDF   F-value p-value
 (Intercept)                                        1    18 117.72286  <.0001
 between_subjects_factor                            1    18  59.18527  <.0001
