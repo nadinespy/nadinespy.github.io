@@ -23,7 +23,7 @@ A methodological paper written by [Berkovits, Hancock, and Nevitt (2000)](https:
 In the following, I present you a function which outputs the same as anova() for mixed effects models, but with bootstrapped p-values. **Thus, should you need a one-line solution to your bootstrapping problem for two-way mixed effects models (or some inspiration writing your own function) - below you see one way how you can do it.** 
 
 ## Why bootstrapping in the first place?
-Normally, when performing a statistical test using standard programs or functions (in e. g. R or MATLAB) you assume a theoretical null distribution (e. g. a t-distribution with mean and variance parameters) for your test statistic. This is fine, if you are certain that your data is normally distributed. If you aren't, you should consider to do the test using a **data-driven approximate null distribution**. While all procedures to create such a distribution use a form of resampling from the given data, their exact details depend on the model of interest (i.e., whether you consider a 1-, 2- or n-way model, and whether effects are fixed or random). 
+Normally, when performing a statistical test using standard programs or functions (in e. g. R or MATLAB) you assume a theoretical null distribution (e. g. a t-distribution with mean and variance parameters) for your test statistic. This is fine, if you are certain that your data is normally distributed and homoscedastic. If you aren't, you should consider to do the test using a **data-driven approximate null distribution**. While all procedures to create such a distribution use a form of resampling from the given data, their exact details depend on the model of interest (i.e., whether you consider a 1-, 2- or n-way model, and whether effects are fixed or random). 
 
 # How to use bootstrapping in a two-way mixed effects ANOVA
 Imagine that we want to compare two diets, a moderately low-carb diet and a strict ketogenic diet, w. r. t. weight loss. Let us further assume that each individual trying either the low-carb (LC) or the ketogenic (K) diet undergoes two different consecutive sport interventions, one focusing on weight training (WT), and one focusing on endurance (E), which we also want to compare. Thus, we are interested in the effect of the between-subject factor diet and the effect of the within-subject factor sport (and possibly their interaction) on weight loss. 
@@ -50,27 +50,27 @@ sport_intervention = matrix(c(rep(0, n), rep(1, n)))                # 0 codes fo
 diet = matrix(c(rep(0,n/2), rep(1,n/2), rep(0,n/2), rep(1,n/2)))    # 0 codes for LC, 1 for K
 id = matrix(c(1:n,1:n))
 ```
-Here, the data is already provided in the way as required by the function, i.e., the response variable (weight loss) is ordered according to the levels of the within-subjects factor (WT and E). (First all values of weight loss under the condition of WT, and then all values of weight loss under the condition of E.) We also need factor variables indicating the kind of diet and sport intervention as well as a variable indicating the subject. 
+Here, the data is already provided in the way as required by the function, i.e., response variable, factor variables indicating the kind of diet and sport intervention as well as a variable indicating the subject are passed as column vectors (either numerical or in dataframe format). 
 
 Note that our response variable follows a left-skewed distribution (which gives you a reason to perform your tests using bootstrapping).
 
 Now we call bootstrap_2way_rm_anova() - the function I wrote (rm stands for repeated measures).
 
 ## bootstrap_2way_rm_anova()
-This function requires a response variable, the between-subjects and within-subjects factor, a subject indicator variable as well as the number of bootstraps to be performed (here, we decide for 3000) as input variables. You can pass them either as dataframes or numerical column vectors.
+This function requires a response variable, the between-subjects and within-subjects factor, and a subject indicator variable as input variables. You can pass them either as dataframes or numerical column vectors. Optional parameters are the number of bootstraps to be performed (the default is 3000) and the seed number for the random resamples (in case, you want to exactly replicate your results when using the function a second time). 
 
 ```r
-rm_anova_weight_loss_bootstrap = bootstrap_2way_rm_anova(weight_loss, diet, sport_intervention, id, 3000)
+rm_anova_weight_loss_bootstrap = bootstrap_2way_rm_anova(weight_loss, diet, sport_intervention, id, seednumber = 10)
 ```
 The output is as given by anova(), but with bootstrap p-values instead:
 
 ```r
-> rm_anova_weight_loss_bootstrap
+> rm_anova_weight_loss_bootstrap_current
                                                numDF denDF   F-value p-value
 (Intercept)                                        1    18 117.72286  <.0001
 between_subjects_factor                            1    18  59.18527  <.0001
-within_subjects_factor                             1    18  16.88298   0.001
-between_subjects_factor:within_subjects_factor     1    18  21.22307  <.0001
+within_subjects_factor                             1    18  16.88298   1e-03
+between_subjects_factor:within_subjects_factor     1    18  21.22307   3e-04
 ```
 It seems like there is an effect of both diet and sport intervention on weight loss in this data, including an interaction of the two, with greater losses in the E condition (mean ~ 4.2 kg) than in the WT condition (mean ~ 1.9 kg), and greater losses in the K (mean ~ 5.2 kg) than in the LC diet (mean ~ 0.9). (Remember, it's a fictious example.)
 
@@ -81,7 +81,7 @@ The general idea behind using bootstrapping for statistical tests is to resample
 In the code, we first allocate variables and perform the statistical test with the original data.
 
 ```r
-bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, within_subjects_factor, id, number_of_bootstraps){
+bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, within_subjects_factor, id, number_of_bootstraps = 3000, seednumber = 10){
 
   # convert variables numeric vectors (if originally provided in dataframe format), and concatenate all in matrix 
   response_variable = data.matrix(response_variable)
@@ -89,11 +89,11 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   within_subjects_factor = data.matrix(within_subjects_factor)
   id = data.matrix(id)
   
-  matrix = cbind(response_variable, between_subjects_factor, within_subjects_factor, id)
-  colnames(matrix) = c("response_variable", "between_subjects_factor", "within_subjects_factor", "id")
+  dataset = cbind(response_variable, between_subjects_factor, within_subjects_factor, id)
+  colnames(dataset) = c("response_variable", "between_subjects_factor", "within_subjects_factor", "id")
   
   # calculate ANOVA for original dataset
-  rm_anova = anova(lme(response_variable ~ between_subjects_factor*within_subjects_factor,   random=~1 | id, method="ML"))
+  rm_anova = anova(lme(response_variable ~ between_subjects_factor*within_subjects_factor, random =~1 | id, method = "ML"))
   
   # store F-values for each factor as well as their interaction
   FValue_between_subjects_factor = rm_anova[2,3]
@@ -105,93 +105,76 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   FVector_within_subjects_factor = numeric()
   FVector_interaction = numeric()
 ```
-Now we need to figure out how to resample from the original data such that we obtain a null distribution. The null hypothesis for which we aim to find a distribution representing it is: There are no differences in mean weight loss, i.e., no main effects neither for diet nor sport intervention, and no interaction effect between the two factors. How do we need to do the resampling to obtain a distribution reflecting this situation?
+Now we need to figure out how to resample from the original data such that we obtain a null distribution. The null hypothesis for which we aim to find a distribution representing it is: There are no differences in means for weight loss w. r. t. different diets and sport interventions (the main effects), as well as no interaction effect between the two factors. How do we need to do the resampling to obtain a distribution reflecting this situation?
 
-Creating a distribution of weight loss that corresponds to a lack of a difference between the diets is easy - you simply need to shuffle the between-subjects factor. It's not so clear what to do with the within-subject factor, though. Here, it is important to keep in mind what we are interested in: Although sport intervention is a within-subject factor, we want to know whether there is a systematic difference between WT and E _across subjects_, and we want to ignore the difference that is specific to the individual.
+Creating a distribution of weight loss that corresponds to a lack of a difference between the diets is easy - you simply need to shuffle the between-subjects factor. It's not so clear what to do with the within-subject factor, though. Here, it is important to keep in mind what we are interested in: sport intervention is a within-subject factor, yet, we want to know whether there is a systematic difference between WT and E **across subjects**, and we want to ignore the difference that is specific to the individual. This is what makes the within-subjects factor a _random_ effect: Differences that occur within a subject aren't necessarily indicative for differences on a group-level, and therefore are allowed to vary. (In contrast to that, we assume a _fixed effect_ for the between-subjects factor, as the difference between levels of the between-subjects factor is not allowed to vary.) 
 
 What can simulate a distribution of weight loss, in which one does not find an inter-individual difference between WT and E, yet in which intra-individual differences (which turn out to be unsystematic on a group-level) may occur?
 
-We solve this problem by performing a centering of the within-subject factor, i.e., we calculate the mean of weight loss for each level (WT and E), and subtract it from the subjects’ value of weight loss within the respective level. By doing so, we eliminate any group-level difference between WT and E, but retain the possibility of intra-individual differences. 
+We solve this problem by performing a centering of the within-subject factor, i.e., we calculate the mean of weight loss for each level (WT and E), and subtract it from the subjects’ value of weight loss within the respective level. By doing so, we eliminate any group-level difference between WT and E (as the means of both levels will be zero when calculating it with the centered data), but retain the possibility of intra-individual differences. 
 
 ### Centering
 ```r
   # derive number of levels in within-subjects factor
-  number_of_levels = length(seq(range(within_subjects_factor)[1], range(within_subjects_factor)[2],by=1))
+  number_of_levels = length(seq(range(within_subjects_factor)[1], range(within_subjects_factor)[2], by=1))
   
   # store all levels in column vector
-  codes_for_levels = cbind(seq(range(within_subjects_factor)[1], range(within_subjects_factor)[2],by=1))
+  codes_for_levels = cbind(seq(range(within_subjects_factor)[1], range(within_subjects_factor)[2], by=1))
   
   # create variable to store means of response variable per level
-  vector_with_means = matrix(,nrow=number_of_levels,ncol=1)
+  vector_with_means = matrix(, nrow=number_of_levels, ncol=1)
   
-  # calculate means of response variable for different levels, and substract respective mean from original value
+  # calculate means of response variable for each level, and substract respective mean from original value
   for (j in 1:number_of_levels){
-    vector_with_means[j] = mean(matrix[within_subjects_factor==codes_for_levels[j],"response_variable"])
-    for (k in 1:length(matrix[,"response_variable"])){
-      if (matrix[k,"within_subjects_factor"] == codes_for_levels[j]){
-        matrix[k,"response_variable"] = response_variable[k]-vector_with_means[j]
-      }
-    }
+    vector_with_means[j] = mean(dataset[within_subjects_factor == codes_for_levels[j],"response_variable"])
+    dataset[within_subjects_factor == codes_for_levels[j],"response_variable"] = dataset[within_subjects_factor == codes_for_levels[j],"response_variable"]-vector_with_means[j]
   }
 ```
-As a next step, we randomly resample with replacement 20 cases (the size of our original sample) of the centered data (from each level 10 cases), whereby we preserve the allocation of WT and E to the same subject, and randomize the assigned diet. This is now our bootstrapped dataset. 
+As a next step, we randomly resample with replacement 20 subjects (the size of our original sample), from which we extract the centered response variable of both WT and E. We provide the corresponding within-subjects factor, and randomly assign the diet. This is then our bootstrapped dataset. (Note that the same subject can be resampled several times and that the random assignments of the diet are not balanced.)
 
 ### Resampling
 ```r
-  # determine number of repetitions for resampling
-  n = number_of_bootstraps
-  
-  # create vectors containing values for set.seed(), one for resampling the response variable from different levels of the within-subjects factor, one for resampling the between-subjects factor
-  index1 = numeric()
-  set.seed(10)
-  index1 = sample(1:100000,3000,replace=T)
-  index2 = numeric()
-  set.seed(20)
-  index2 = sample(1:100000,3000,replace=T)
-  
-  # resampling 
-  for (i in 2:n){
+  # resampling
+  # set seed if provided
+  if (!is.null(seednumber)){
+    set.seed(seednumber)
+  }
+
+  for (i in 1:number_of_bootstraps){
+
+    duplicate_response_variable = dataset[,"response_variable"]
     
-    # get response variable from matrix
-    response_variable_for_boot = matrix[,"response_variable"]
-    
-    # create variable for sample sizes per level, resamples per level, and the resulting bootstrapped response variable
-    number_per_level = matrix(,nrow=number_of_levels, ncol=1)
-    list_of_resamples = list()
-    new_response_variable = numeric()
-    
-    for (j in 1:number_of_levels){
+    # get sample-size resample of the subjects
+    resample_subjects = sample(dataset[, "id"], length(response_variable)/number_of_levels, replace = T)
       
-      # resample from level j
-      number_per_level[j] = dim(matrix[within_subjects_factor==codes_for_levels[j],])[1]
-      set.seed(index1[i])
-      list_of_resamples[[j]] = sample(matrix[within_subjects_factor==codes_for_levels[j], "response_variable"], number_per_level[j],replace = T)
-      
-      # get indices of level j in matrix
-      index_for_response_variable = numeric()
-      for (k in 1:length(matrix[,"response_variable"])){
-        if (matrix[k,"within_subjects_factor"] == codes_for_levels[j]){
-          index_for_response_variable = append(index_for_response_variable,k)
+    # create variables to store response variables and corresponding within-subjects factor
+    response_variable_for_boot = numeric()
+    within_subjects_factor_for_boot = numeric()
+    
+    # for each subject contained in resample_subjects, extract response variables of all levels, store corresponding within-subjects factor
+    for (p in 1:length(resample_subjects)){
+      for (w in 1:length(duplicate_response_variable)){
+        if (dataset[w,"id"] == resample_subjects[p]){
+          response_variable_for_boot = append(response_variable_for_boot, duplicate_response_variable[w])
+          within_subjects_factor_for_boot = append(within_subjects_factor_for_boot, within_subjects_factor[w])
         }
-      }
-      
-      # replace original value of response variable by resampled value
-      for (m in 1:number_per_level[j]){
-        response_variable_for_boot[index_for_response_variable[m]] = list_of_resamples[[j]][m]
       }
     }
     
-    # resample between_subjects factor
-    set.seed(index2[i])
-    between_subjects_factor_for_boot = sample(between_subjects_factor, nrow(between_subjects_factor), replace = T)
+    # resampling of the between_subjects factor (as often as the sample-size), and replicating it as many times as the number of levels of within-subject factor
+    between_subjects_factor_for_boot = sample(between_subjects_factor, nrow(between_subjects_factor)/number_of_levels, replace = T)
+    between_subjects_factor_for_boot = rep(between_subjects_factor_for_boot, each = number_of_levels)
+    
+    # adjust indicator variable according to response_variable_for_boot (replicate the number as many times as the number of levels of within-subject factor)
+    id_for_boot = rep(seq(1,length(response_variable)/number_of_levels,1), each=number_of_levels)
 ```
-We compute a 2-way mixed effects ANOVA from this dataset using anova(lme()), and store the F-value. We repeat this process a number of times, each time calculating and storing the F-value.
+We compute a 2-way mixed effects ANOVA using the resample of the centered response variable and the randomized between-subjects factor, and store the F-value. We repeat this process a number of times, each time calculating and storing the F-value.
 
 ### Calculate ANOVA for boostrapped data
 ```r
-    rm_anova_simulation = anova(lme(response_variable_for_boot ~ between_subjects_factor_for_boot*within_subjects_factor, random=~1 | id, method="ML", control=lmeControl(singular.ok=TRUE)))  
-    
-    # store F-values for bootstrapped data
+    # calculate ANOVA and store F-values for boostrapped data
+    rm_anova_simulation = anova(lme(response_variable_for_boot ~ between_subjects_factor_for_boot * within_subjects_factor_for_boot, random = ~1 | id_for_boot, method="ML", control = lmeControl(singular.ok = TRUE)))  
+  
     FVector_between_subjects_factor[i] = as.numeric(rm_anova_simulation[2,3])
     FVector_within_subjects_factor[i] = as.numeric(rm_anova_simulation[3,3])
     FVector_interaction[i] = as.numeric(rm_anova_simulation[4,3])
@@ -201,14 +184,14 @@ Now, to determine the p-value, we place the F-value of our original sample withi
 
 ### Locate F-value of original dataset within empirical F-distribution
 ```r
-  # bootstrap p-value for between-subjects factor: check proportion of F-values larger than the observed one
-  bootstrap_pValue_between_subjects_factor = length(which(FVector_between_subjects_factor>FValue_between_subjects_factor))/n
+   # bootstrap p-value for between-subjects factor: check proportion of F-values larger than the observed one
+  bootstrap_pValue_between_subjects_factor = length(which(FVector_between_subjects_factor > FValue_between_subjects_factor))/number_of_bootstraps
   
   # bootstrap p-value for within-subjects factor: check proportion of F-values larger than the observed one
-  bootstrap_pValue_within_subjects_factor = length(which(FVector_within_subjects_factor>FValue_within_subjects_factor))/n
+  bootstrap_pValue_within_subjects_factor = length(which(FVector_within_subjects_factor > FValue_within_subjects_factor))/number_of_bootstraps
   
   # bootstrap p-value for interaction: check proportion of F-values larger than the observed one
-  bootstrap_pValue_interaction = length(which(FVector_interaction>FValue_interaction))/n
+  bootstrap_pValue_interaction = length(which(FVector_interaction > FValue_interaction))/number_of_bootstraps
   
   # concatenate all p-values
   FValues = rbind(FValue_between_subjects_factor, FValue_within_subjects_factor, FValue_interaction)

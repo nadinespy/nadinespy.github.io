@@ -1,7 +1,7 @@
-# two-way mixed-effects anova with bootstrapping for comparing means, for either two or three levels in the within-subjects factor
+# two-way mixed-effects anova with bootstrapping for comparing means
 
-# input: response variable ordered according to levels of within-subjects factor (i.e., first all values of first level, second all values of second level etc.), between-subjects factor, within-subjects factor, indices for subjects (all as column vectors, either numerical or as dataframes);
-# output: usual output as given by anova(), but with bootstrap p-values instead.
+# input: response variable, between-subjects factor, within-subjects factor, indices for subjects, number of bootstraps to be performed, and number for seed (optional) (all but number of bootstraps and number for seed as column vectors, either numerical or as dataframes);
+# output: usual output as given by anova(lme()), but with bootstrap p-values instead.
 
 # example: sample of 18 participatns, two groups (9 patients and 9 controls, between-subjects factor "group"), two experimental conditions per subject (within-subjects factor "condition").
 # group = matrix(c(rep(0,9), rep(1,9), rep(0,9), rep(1,9)))
@@ -12,7 +12,7 @@
 library("nlme")
 
 
-bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, within_subjects_factor, id, number_of_bootstraps){
+bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, within_subjects_factor, id, number_of_bootstraps, seednumber = NULL){
   
   # convert variables numeric vectors (if originally provided in dataframe format), and concatenate all in matrix 
   response_variable = data.matrix(response_variable)
@@ -20,8 +20,8 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   within_subjects_factor = data.matrix(within_subjects_factor)
   id = data.matrix(id)
   
-  matrix = cbind(response_variable, between_subjects_factor, within_subjects_factor, id)
-  colnames(matrix) = c("response_variable", "between_subjects_factor", "within_subjects_factor", "id")
+  dataset = cbind(response_variable, between_subjects_factor, within_subjects_factor, id)
+  colnames(dataset) = c("response_variable", "between_subjects_factor", "within_subjects_factor", "id")
   
   # calculate ANOVA for original dataset
   rm_anova = anova(lme(response_variable ~ between_subjects_factor*within_subjects_factor, random=~1 | id, method="ML"))
@@ -45,64 +45,47 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   # create variable to store means of response variable per level
   vector_with_means = matrix(,nrow=number_of_levels,ncol=1)
   
-  # calculate means of response variable for different levels, and substract respective mean from original value
+  # calculate means of response variable for each level, and substract respective mean from original value
   for (j in 1:number_of_levels){
-    vector_with_means[j] = mean(matrix[within_subjects_factor==codes_for_levels[j],"response_variable"])
-    for (k in 1:length(matrix[,"response_variable"])){
-      if (matrix[k,"within_subjects_factor"] == codes_for_levels[j]){
-        matrix[k,"response_variable"] = response_variable[k]-vector_with_means[j]
-      }
-    }
+    vector_with_means[j] = mean(dataset[within_subjects_factor==codes_for_levels[j],"response_variable"])
+    dataset[within_subjects_factor==codes_for_levels[j],"response_variable"] = dataset[within_subjects_factor==codes_for_levels[j],"response_variable"]-vector_with_means[j]
   }
   
-  # determine number of repetitions for resampling
-  n = number_of_bootstraps
-  
-  # create vectors containing values for set.seed(), one for resampling the response variable from different levels of the within-subjects factor, one for resampling the between-subjects factor
-  index1 = numeric()
-  set.seed(10)
-  index1 = sample(1:100000,3000,replace=T)
-  index2 = numeric()
-  set.seed(20)
-  index2 = sample(1:100000,3000,replace=T)
-  
-  for (i in 2:n){
-    
-    # get response variable from matrix
-    response_variable_for_boot = matrix[,"response_variable"]
-    
-    # create variable for sample sizes per level, resamples per level, and the resulting bootstrapped response variable
-    number_per_level = matrix(,nrow=number_of_levels, ncol=1)
-    list_of_resamples = list()
-    new_response_variable = numeric()
-    
-    for (j in 1:number_of_levels){
+  # resampling
+  # set seed if provided
+  if (!is.null(seednumber)){
+    set.seed(seednumber)
+  }
+
+  for (i in 1:number_of_bootstraps){
+
+    # get sample-size resample of the subjects 
+    resample_subjects = sample(dataset[, "id"], length(response_variable)/number_of_levels,replace = T)
       
-      # resample from level j
-      number_per_level[j] = dim(matrix[within_subjects_factor==codes_for_levels[j],])[1]
-      set.seed(index1[i])
-      list_of_resamples[[j]] = sample(matrix[within_subjects_factor==codes_for_levels[j], "response_variable"], number_per_level[j],replace = T)
-      
-      # get indices of level j in matrix
-      index_for_response_variable = numeric()
-      for (k in 1:length(matrix[,"response_variable"])){
-        if (matrix[k,"within_subjects_factor"] == codes_for_levels[j]){
-          index_for_response_variable = append(index_for_response_variable,k)
+    # create variables to store response variables and corresponding within-subjects factor
+    response_variable_for_boot = numeric()
+    within_subjects_factor_for_boot = numeric()
+    
+    # for each subject contained in resample_subjects, extract response variables of all levels, store corresponding within-subjects factor
+    for (p in 1:length(resample_subjects)){
+      for (w in 1:length(response_variable)){
+        if (dataset[w,"id"]==resample_subjects[p]){
+          response_variable_for_boot = append(response_variable_for_boot, response_variable[w])
+          within_subjects_factor_for_boot = append(within_subjects_factor_for_boot, within_subjects_factor[w])
         }
       }
-      
-      # replace original value of response variable by resampled value
-      for (m in 1:number_per_level[j]){
-        response_variable_for_boot[index_for_response_variable[m]] = list_of_resamples[[j]][m]
-      }
     }
-    
-    # resample between_subjects factor
-    set.seed(index2[i])
+
+    # sample-size resampling of the between_subjects factor, and replicating it as many times as the number of levels of within-subject factor
+    #between_subjects_factor_for_boot = sample(between_subjects_factor, nrow(between_subjects_factor)/number_of_levels, replace = T)
+    #between_subjects_factor_for_boot = rep(between_subjects_factor_for_boot, each=number_of_levels)
     between_subjects_factor_for_boot = sample(between_subjects_factor, nrow(between_subjects_factor), replace = T)
     
+    # adjust indicator variable according to response_variable_for_boot (replicate the number as many times as the number of levels of within-subject factor)
+    id_for_boot = rep(resample_subjects, each=number_of_levels)
+    
     # calculate ANOVA and store F-values for boostrapped data
-    rm_anova_simulation = anova(lme(response_variable_for_boot ~ between_subjects_factor_for_boot*within_subjects_factor, random=~1 | id, method="ML", control=lmeControl(singular.ok=TRUE)))  
+    rm_anova_simulation = anova(lme(response_variable_for_boot ~ between_subjects_factor_for_boot * within_subjects_factor_for_boot, random = ~1 | id_for_boot, method="ML", control=lmeControl(singular.ok = TRUE)))  
     
     FVector_between_subjects_factor[i] = as.numeric(rm_anova_simulation[2,3])
     FVector_within_subjects_factor[i] = as.numeric(rm_anova_simulation[3,3])
@@ -110,13 +93,13 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
   }
   
   # bootstrap p-value for between-subjects factor: check proportion of F-values larger than the observed one
-  bootstrap_pValue_between_subjects_factor = length(which(FVector_between_subjects_factor>FValue_between_subjects_factor))/n
+  bootstrap_pValue_between_subjects_factor = length(which(FVector_between_subjects_factor > FValue_between_subjects_factor))/number_of_bootstraps
   
   # bootstrap p-value for within-subjects factor: check proportion of F-values larger than the observed one
-  bootstrap_pValue_within_subjects_factor = length(which(FVector_within_subjects_factor>FValue_within_subjects_factor))/n
+  bootstrap_pValue_within_subjects_factor = length(which(FVector_within_subjects_factor > FValue_within_subjects_factor))/number_of_bootstraps
   
   # bootstrap p-value for interaction: check proportion of F-values larger than the observed one
-  bootstrap_pValue_interaction = length(which(FVector_interaction>FValue_interaction))/n
+  bootstrap_pValue_interaction = length(which(FVector_interaction > FValue_interaction))/number_of_bootstraps
   
   # concatenate all p-values
   FValues = rbind(FValue_between_subjects_factor, FValue_within_subjects_factor, FValue_interaction)

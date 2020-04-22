@@ -13,8 +13,8 @@ output:
 
 # load necessary functions
 setwd("/mydir/")
-
 source("bootstrap_2way_rm_anova.R")
+
 
 # number of subjects
 n = 20
@@ -26,18 +26,11 @@ b <- rnorm(3, 6, 1)
 set.seed(30)
 c <- rnorm(8, 8, 1)
 
-set.seed(10)
-a <- rnorm(39, 2, 2)
-set.seed(20)
-b <- rnorm(6, 6, 1)
-set.seed(30)
-c <- rnorm(15, 8, 1)
 weight_loss <- cbind(c(a, b, c))
 sport_intervention = matrix(c(rep(0, n), rep(1, n)))
 diet = matrix(c(rep(0,n/2), rep(1,n/2), rep(0,n/2), rep(1,n/2)))
 id = matrix(c(1:n,1:n))
 
-rm_anova_weight_loss_bootstrap = bootstrap_2way_rm_anova(weight_loss, diet, sport_intervention, id, 3000)
+rm_anova_weight_loss_bootstrap_current = bootstrap_2way_rm_anova(weight_loss, diet, sport_intervention, id, seednumber = 10)
 
 ```
-
