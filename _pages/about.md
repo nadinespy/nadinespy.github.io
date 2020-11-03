@@ -8,6 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-I'm Nadine, regular runner and occasional scientist, and prospective PhD student at the Sackler Center for Consciousness Science. 
-In this blog, I want to share pieces of knowledge that I hope are possibly useful for others. 
+I'm Nadine, regular runner and occasional scientist, PhD student at the Sackler Center for Consciousness Science working on neural measures of complexity and emergence. In this blog, I want to share pieces of knowledge that I hope are possibly useful for others. 
 
