@@ -10,9 +10,7 @@ locale                   : "en-US"
 title                    : "Nadine Spychala"
 title_separator          : "-"
 name                     : &name "Nadine Spychala"
-<<<<<<< HEAD
 description              : &description "Doctoral researcher at Sussex University. Working on formal measures of complexity and emergence. Information Theory | Machine Learning | Open & Reproducible Science. She/her."
-
 url                      : https://nadinespy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "nadinespy/nadinespy.github.io"
@@ -85,9 +83,7 @@ author:
   twitter          : NadineSpychala
   name             : "Nadine Spychala"
   avatar           : "bio-photo.jpg"
-<<<<<<< HEAD
   bio              : "Doctoral researcher at Sussex University. Working on formal measures of complexity and emergence. Information Theory | Machine Learning | Open & Reproducible Science. She/her."
-
   location         : "Brighton"
   employer         :
   pubmed           : 
