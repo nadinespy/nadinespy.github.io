@@ -9,6 +9,6 @@ redirect_from:
 ---
 
 I'm Nadine, regular runner and occasional scientist. 
-In this blog, I want to share thoughts, tools, and other bits of knowledge that bear the slightest chance of being useful or interesting to others. 
+In this blog, I want to share my work, thoughts, tools, and other bits of knowledge that have a small chance of being useful or interesting to others. 
 
 
