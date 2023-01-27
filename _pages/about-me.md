@@ -12,7 +12,9 @@ redirect_from:
 author_profile: yes
 ---
 
-I am a doctoral researcher in computational neuroscience at the University of Sussex where I validate information-theoretic measures of complexity and emergence in both simulated and empirical data. In this context, I also work on a [Python library](https://openlifesci.org/posts/2022/03/17/ols-4-participant-nadine-spychala/) to easily apply and compare different measures on different data, in an understandable and comprehensive way including documentation & tutorials. This work has also been part of my mentorship within the [Open Life Science mentoring & training program for Open Science ambassadors](https://openlifesci.org/) where I am currently a mentor myself. I value open & reproducible research that is aligned with ethical research culture & incentives, and do my best to comply to best practices.
+I am a doctoral researcher in computational neuroscience at the University of Sussex where I validate information-theoretic measures of complexity and emergence in both simulated and empirical data. In this context, I also work on a [Python library](https://openlifesci.org/posts/2022/03/17/ols-4-participant-nadine-spychala/) to easily apply and compare different measures on different data, in an understandable and comprehensive way including documentation & tutorials. This work has also been part of my mentorship within the [Open Life Science mentoring & training program for Open Science ambassadors](https://openlifesci.org/) where I have been a mentor myself. I value open & reproducible research that is aligned with ethical research culture & incentives, and do my best to comply to best practices.
+
+Since 2023, I am a [Software Sustainability Institute](https://www.software.ac.uk/) (SSI) Fellow aiming to send a strong signal for SSI’s slogan “better software, better research” by providing software development workshops to research communities I’m involved in myself.
 
 I like [Brainhacks](https://brainhack.org/), and I like teaching & supervision (currently in machine learning).
 
