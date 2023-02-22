@@ -12,8 +12,10 @@
 # condition = matrix(c(rep(0, 18), rep(1, 18)))
 # id = matrix(c(1:18,1:18))
 #
+# For an in-depth explanation of the analysis and code, visit 
+# https://nadinespy.github.io/posts/2020/04/bootstrapping-function-for-2way-mixed-effects-ANOVA/
+# 
 # CITATION - please cite this code in your publication using the following information:
-#
 # ***********************************************************************************************************
 # Author: Nadine Spychala
 # Publication date: 20th April 2020

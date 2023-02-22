@@ -199,7 +199,7 @@ Now, to determine the p-value, we place the F-value of our original sample withi
   return(rm_anova)
 }
 ```
-You can download the R markdown file with the above example  [here](https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrapping_in_2way_rm_anova.Rmd), and the source code of bootstrap_2way_rm_anova() [here](https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrap_2way_rm_anova.R).
+You can download the R markdown file with the above example  [here](https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrap_2way_rm_anova_example.Rmd), and the source code of bootstrap_2way_rm_anova() [here](https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrap_2way_rm_anova.R).
 
 
 
