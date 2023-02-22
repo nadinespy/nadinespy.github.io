@@ -8,6 +8,19 @@
 # condition = matrix(c(rep(0, 18), rep(1, 18)))
 # id = matrix(c(1:18,1:18))
 
+# CITATION - please cite this code in your publication using the following information:
+
+# ***********************************************************************************************************
+# Author: Nadine Spychala
+# Publication date: 20th April 2020
+# Title: A bootstrapping function for a two-way mixed effects ANOVA
+# Type: source code
+# Availability: https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrap_2way_rm_anova.R 
+# ***********************************************************************************************************
+
+# This code is published under the MIT License (MIT).
+
+# -----------------------------------------------------------------------------------------------------------
 # load necessary packages
 library("nlme")
 
