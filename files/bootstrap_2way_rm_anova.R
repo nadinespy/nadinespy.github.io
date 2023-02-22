@@ -1,15 +1,19 @@
 # two-way mixed-effects anova with bootstrapping
-
-# input: response variable, between-subjects factor, within-subjects factor, indices for subjects, number of bootstraps to be performed (optional, with 3000 as default), and number for seed (optional) (all but number of bootstraps and number for seed as column vectors, either numerical or as dataframes);
+#
+# input: response variable, between-subjects factor, within-subjects factor, indices for subjects, 
+# number of bootstraps to be performed (optional, with 3000 as default), and number for seed (optional) 
+# (all but number of bootstraps and number for seed as column vectors, either numerical or as dataframes);
 # output: usual output as given by anova(lme()), but with bootstrap p-values instead.
-
-# example: sample of 18 participatns, two groups (9 patients and 9 controls, between-subjects factor "group"), two experimental conditions per subject (within-subjects factor "condition").
+#
+# example: sample of 18 participatns, two groups (9 patients and 9 controls, between-subjects factor "group"), 
+# two experimental conditions per subject (within-subjects factor "condition").
+#
 # group = matrix(c(rep(0,9), rep(1,9), rep(0,9), rep(1,9)))
 # condition = matrix(c(rep(0, 18), rep(1, 18)))
 # id = matrix(c(1:18,1:18))
-
+#
 # CITATION - please cite this code in your publication using the following information:
-
+#
 # ***********************************************************************************************************
 # Author: Nadine Spychala
 # Publication date: 20th April 2020
@@ -17,10 +21,11 @@
 # Type: source code
 # Availability: https://github.com/nadinespy/nadinespy.github.io/blob/master/files/bootstrap_2way_rm_anova.R 
 # ***********************************************************************************************************
-
+#
 # This code is published under the MIT License (MIT).
-
+#
 # -----------------------------------------------------------------------------------------------------------
+
 # load necessary packages
 library("nlme")
 
@@ -81,7 +86,8 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
     response_variable_for_boot = numeric()
     within_subjects_factor_for_boot = numeric()
     
-    # for each subject contained in resample_subjects, extract response variables of all levels, store corresponding within-subjects factor
+    # for each subject contained in resample_subjects, extract response variables of all levels, 
+    # store corresponding within-subjects factor
     for (p in 1:length(resample_subjects)){
       for (w in 1:length(copy_response_variable)){
         if (dataset[w,"id"] == resample_subjects[p]){
@@ -91,11 +97,13 @@ bootstrap_2way_rm_anova <- function(response_variable, between_subjects_factor, 
       }
     }
     
-    # resampling of the between_subjects factor (as often as the sample-size), and replicating it as many times as the number of levels of within-subject factor
+    # resampling of the between_subjects factor (as often as the sample-size), and replicating it as 
+    # many times as the number of levels of within-subject factor
     between_subjects_factor_for_boot = sample(between_subjects_factor, nrow(between_subjects_factor)/number_of_levels, replace = T)
     between_subjects_factor_for_boot = rep(between_subjects_factor_for_boot, each=number_of_levels)
     
-    # adjust indicator variable according to response_variable_for_boot (replicate the number as many times as the number of levels of within-subject factor)
+    # adjust indicator variable according to response_variable_for_boot (replicate the number as many 
+    # times as the number of levels of within-subject factor)
     id_for_boot = rep(seq(1,length(response_variable)/number_of_levels,1), each=number_of_levels)
     
     # calculate ANOVA and store F-values for boostrapped data
