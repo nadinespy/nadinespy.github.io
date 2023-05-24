@@ -147,7 +147,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 375px; width: 575px;" />
+  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 2592px; width: 3888px;" />
   <figcaption>
     Somewhere on the Snowdon Horseshoe, Wales. (CC-BY-SA 4.0)
     <br>
@@ -987,7 +987,7 @@ I am very grateful for the feedback I have received from all three of them.
 
 ## References <a name="references"></a>
 
-### Scientific papers <a name="scientific_papers""></a>
+### Scientific papers <a name="scientific_papers"></a>
 Dienes, Z. (2023). The credibility crisis and democratic governance: How to reform university governance to be compatible with the nature of science. Royal Society Open Science, 10(1), 220808.
 
 Dienes, Z., Fucci, E., Rees, M. G., Lübbert, A., Schumann, F., Van Vugt, M. (2022). Beyond kindness: a proposal for the flourishing of science and scientists.
