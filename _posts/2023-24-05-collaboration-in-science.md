@@ -202,7 +202,7 @@ To make collaboration work in the science space, we also need to acknowledge the
     <style>
       /* Whatever that is inside this <style> tag is all styling for your markup / content structure.
       /* The . with the boxed represents that it is a class */
-      .boxed4 {
+      .boxed4a {
         background: #F2F2F2;
         color: #4682B4;
         border: 1px solid #4682B4;
@@ -217,7 +217,7 @@ To make collaboration work in the science space, we also need to acknowledge the
   </head>
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
-    <div class="boxed4"  >
+    <div class="boxed4a"  >
     Mistakes & redundancies would be avoided/discovered more quickly, if collaboration in science was more common. It’s also more fun than the current hyper-competitive, individualistic culture that dominates the research space – a win-win situation for both people and science.
     </div>
   </body>
@@ -225,7 +225,7 @@ To make collaboration work in the science space, we also need to acknowledge the
 
 Moreover, people forming a coalition to work on a project will depend on further feedback from people outside of it – just like one person may engage in false/problematic beliefs or bad practices, so may groups of people. Thus, a group will likewise rely on external corrective input. There’s a sweet spot to be found in terms of how varied this input should be, but as a heuristic, the more pluralistic it is, the more people can get the best out of their projects. 
 
-<html align="right" lang="en">
+<html align="left" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -233,7 +233,7 @@ Moreover, people forming a coalition to work on a project will depend on further
     <style>
       /* Whatever that is inside this <style> tag is all styling for your markup / content structure.
       /* The . with the boxed represents that it is a class */
-      .boxed4 {
+      .boxed4b {
         background: #F2F2F2;
         color: #4682B4;
         border: 1px solid #4682B4;
@@ -241,14 +241,14 @@ Moreover, people forming a coalition to work on a project will depend on further
         width: 325px;
         padding: 10px;
         border-radius: 10px;
-        align-self: right;
-        float: right;
+        align-self: left;
+        float: left;
       }
     </style>
   </head>
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
-    <div class="boxed4"  >
+    <div class="boxed4b"  >
     People collaborating also rely on external feedback – the more varied, the better. On a more systematic level, a tighter overall dialogue between science, policy-making and funding would be desirable to avoid research waste. 
     </div>
   </body>
@@ -286,9 +286,7 @@ hr {
 
 <hr>
 
-To be clear, I am not suggesting that science should operate exactly in some way that we may find in industry, or in any non-academic sector more broadly. I don’t know what the best working structures for science would precisely look like – but I do know that we can benefit from the vast knowledge and experience on teamwork that non-academic sectors have on offer.[^3] It’s not black and white – we could surely adopt some things from fields outside of academia to make better, more efficient and more impactful science. To find out about what works and what doesn’t, we’d simply need to start experimenting more. I do not advocate for prescribing a particular way of working in science in an absolute way. However, I do contend that *in an increasingly complex world where technology progresses rapidly, fields of knowledge get more and more differentiated, the world more inter-connected, and the amount of knowledge people more vast, the scientific community would do better, **on average**, if we’d have solid feedback loops and collaborative patterns in place.* 
-
-<html align="left" lang="en">
+<html align="right" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -304,8 +302,8 @@ To be clear, I am not suggesting that science should operate exactly in some way
         width: 425px;
         padding: 10px;
         border-radius: 10px;
-        align-self: left;
-        float: left;
+        align-self: right;
+        float: right;
       }
     </style>
   </head>
@@ -317,11 +315,11 @@ To be clear, I am not suggesting that science should operate exactly in some way
   </body>
 </html>
 
+To be clear, I am not suggesting that science should operate exactly in some way that we may find in industry, or in any non-academic sector more broadly. I don’t know what the best working structures for science would precisely look like – but I do know that we can benefit from the vast knowledge and experience on teamwork that non-academic sectors have on offer.[^3] It’s not black and white – we could surely adopt some things from fields outside of academia to make better, more efficient and more impactful science. To find out about what works and what doesn’t, we’d simply need to start experimenting more. I do not advocate for prescribing a particular way of working in science in an absolute way. However, I do contend that *in an increasingly complex world where technology progresses rapidly, fields of knowledge get more and more differentiated, the world more inter-connected, and the amount of knowledge people more vast, the scientific community would do better, **on average**, if we’d have solid feedback loops and collaborative patterns in place.* 
+
 Good feedback systems and working structures in science would not only make the scientific domain better, but the world at large: to not stagnate, but make further progress in the 21st century, we, in fact, need more people working in science. This, in turn, would call for and require true and functioning collaboration (something that Will MacAskill did emphasize, too, in his book [What We Owe The Future](https://whatweowethefuture.com/uk/).
 
 ### 2.4 Are collaborative structures stifling scientific creativity? <a name="scientific_creativity"></a>
-Some folks may argue that working with people closely effectively slows down productivity, or that it stifles creativity by imposing too many constraints, or giving too much unnecessary structure. Personally, I believe this is a somewhat romanticised view of science that doesn’t fit the 21st century. Of course, for some people and projects, an individualistic, more isolated approach to work might be best, so it’s, in part, a matter of personal fit. And there is a general tension between collaboration and letting people do their own stuff – for some projects, there can be sharp diminishing returns in adding new people, and there is a coordination cost. As always, flexibility in accommodating people and project needs is hugely important. 
-But the point here is not to argue for or against any particular working structure in an absolute way. Rather, I want to point to large patterns in how people experience doing science, and how ubiquitously incentives and working structures in academia work against people’s well-being and against doing good science. The way science is currently done is not the best way for a lot of people. From what I’ve been hearing from many fellow academics is that people’s productivity is stifled exactly because they are left alone and feel that what they do does not matter to anyone and anything, reducing their works’ quality along the way. 
 
 <html align="left" lang="en">
   <head>
@@ -351,6 +349,10 @@ But the point here is not to argue for or against any particular working structu
     </div>
   </body>
 </html>
+
+Some folks may argue that working with people closely effectively slows down productivity, or that it stifles creativity by imposing too many constraints, or giving too much unnecessary structure. Personally, I believe this is a somewhat romanticised view of science that doesn’t fit the 21st century. Of course, for some people and projects, an individualistic, more isolated approach to work might be best, so it’s, in part, a matter of personal fit. And there is a general tension between collaboration and letting people do their own stuff – for some projects, there can be sharp diminishing returns in adding new people, and there is a coordination cost. As always, flexibility in accommodating people and project needs is hugely important. 
+But the point here is not to argue for or against any particular working structure in an absolute way. Rather, I want to point to large patterns in how people experience doing science, and how ubiquitously incentives and working structures in academia work against people’s well-being and against doing good science. The way science is currently done is not the best way for a lot of people. From what I’ve been hearing from many fellow academics is that people’s productivity is stifled exactly because they are left alone and feel that what they do does not matter to anyone and anything, reducing their works’ quality along the way. 
+
 
 To be clear, I think creativity, in its chaotically structureless, almost artistic sense, is part of science – there may often be creative elements or processes involved in generating ideas or finding solutions to problems at different stages in a research project. I do not think at all that such creativity stands in contradiction with collaborative working structures.
 
@@ -460,8 +462,6 @@ Regarding the third point, he suggests things like
 
 Ultimately, Yarkoni gloomily concedes that the third path is effortful, and it’s an open question how the psychological sciences can be helped by it.[^6] 
 
-Yarkoni’s fundamental critique of psychological research had elicited a big number of responses, one of which came from [Lakens et al. (2022)](file:///home/nadinespy/Downloads/7640f93a-4daa-4004-a7d1-88bff16c6eef.pdf) and which challenged Yarkoni’s assumption that every psychological or cognitive construct would be identical with the space of possible operationalizations. Whereas, e.g., the concept of “color” indeed is identical to the space of possible operationalizations – the colors in the visible  spectrum –, many concepts such as, for instance, “anger” aren’t, meaning that they are <span style="color:#2E8B57">*“[…] semantically richer than and cannot be reduced to their operationalizations (e.g., anger is not  just  what anger measures measure).”*</span>. As a consequence, merely focussing on aligning verbal and quantitative expressions of one’s hypotheses as demanded by Yarkoni would fail to acknowledge the fundamental gap between verbal and statistical hypotheses in the first place, <span style="color:#2E8B57">*“[…] no matter how expansive the fitted model is.”*</span> 
-
 <html align="left" lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -490,6 +490,8 @@ Yarkoni’s fundamental critique of psychological research had elicited a big nu
     </div>
   </body>
 </html>
+
+Yarkoni’s fundamental critique of psychological research had elicited a big number of responses, one of which came from [Lakens et al. (2022)](file:///home/nadinespy/Downloads/7640f93a-4daa-4004-a7d1-88bff16c6eef.pdf) and which challenged Yarkoni’s assumption that every psychological or cognitive construct would be identical with the space of possible operationalizations. Whereas, e.g., the concept of “color” indeed is identical to the space of possible operationalizations – the colors in the visible  spectrum –, many concepts such as, for instance, “anger” aren’t, meaning that they are <span style="color:#2E8B57">*“[…] semantically richer than and cannot be reduced to their operationalizations (e.g., anger is not  just  what anger measures measure).”*</span>. As a consequence, merely focussing on aligning verbal and quantitative expressions of one’s hypotheses as demanded by Yarkoni would fail to acknowledge the fundamental gap between verbal and statistical hypotheses in the first place, <span style="color:#2E8B57">*“[…] no matter how expansive the fitted model is.”*</span> 
 
 So… it can all get quite complicated. There is more to say to the struggles in the psychological – and, by extension, the mind sciences –, but I will constrain myself at that point to offer only a glimpse into some of the issues that arise. The point here is to showcase some of the difficulties and disputes that the mind sciences face. (Looking at the 38 responses elicited by Yarkoni’s paper might be an interesting starting point to know more.) 
 
@@ -559,6 +561,7 @@ hr {
 As things stand, the nature of the knowledge produced in the mind sciences makes it kind of easy to pursue wrong or hardly falsifiable ideas (supported by poor analyses), making it hard for false, ill-defined or useless theories/ideas/narratives to die out (I wrote something related to this in [this Twitter thread](https://twitter.com/NadineSpychala/status/1577312204927500290) preceding the symposium mentioned at the beginning).[^7] In a way, one can argue that exactly because the mind sciences have faced these kinds of problems from the very beginning that more “exact” sciences haven’t, there may be already a better understanding of how to handle them. For instance, recent, more empirical branches of physics where statistical inferences are equally done, hypotheses tested, and where the topic of investigation is not a general theory with very high predictive power may face similar problems, but have less matured yet to deal with those. Notwithstanding, the mind sciences have not (yet) matured enough, and a lot of the current knowledge produced will remain to be noise and eventually die out. They are still in a very messy, or, as some may state, pre-paradigmatic stage ([Kuhn, 2012](https://www.jstor.org/stable/2183664)).
 
 ### 3.3 Towards a shared, multi-disciplinary understanding of the subject of study <a name="shared_interdisciplinary_understanding"></a>
+It is currently hard to come up with a  good research objective and a good corresponding method in the mind sciences, exactly because they are in this messy state. One must consult a lot of philosophy of science and meta-science questions, but also practical as well as value-based ones – what does work practically, and what is valuable to pursue? 
 
 <html align="left" lang="en">
   <head>
@@ -588,8 +591,6 @@ As things stand, the nature of the knowledge produced in the mind sciences makes
     </div>
   </body>
 </html>
-
-It is currently hard to come up with a  good research objective and a good corresponding method in the mind sciences, exactly because they are in this messy state. One must consult a lot of philosophy of science and meta-science questions, but also practical as well as value-based ones – what does work practically, and what is valuable to pursue? 
 
 Being embedded in close collaborations as well as in a greater social/interdisciplinary context which encourages exchange on those fronts may help to overcome a “crisis of purpose”, as Jessica Thompson (2021) had put it in her paper on [Forms of explanation and understanding for neuroscience and artificial intelligence](https://journals.physiology.org/doi/full/10.1152/jn.00195.2021). Many folks – particularly early career researchers –  will resonate with the following excerpt:
 
@@ -858,10 +859,6 @@ Currently, the two most ubiquitously used metrics are the ones already mentioned
 ### 5.2 Rebuilding the academic space - a quest for experiments and prioritizing long-term benefits <a name="experiments_longterm_benefits"></a>
 Tal Yarkoni would say, as he does in [this post](https://www.talyarkoni.org/blog/2018/10/02/no-its-not-the-incentives-its-you/), that people could well choose to not optimize for academic incentives. I agree. They could. Needless to say, everyone has a moral responsibility to do the right thing. But a bottom-up movement will eventually be not enough – incentives, and therefore top-down policies, will need to change, too. 
 
-We may need to fundamentally re-build the academic space under different assumptions and principles. This will also entail a re-assessment of how we evaluate research, and, consequently, a scientist – what do we think should distinguish a “successful” from an “unsuccessful” research project, and what is a good researcher? Regarding the latter, is the criterion productivity? People will produce a lot of low quality research. Is the criterion to publish in high-impact journals? People will do fraudulent science to do so. Is the criterion the future career of students? People will select students with promising profiles rather than educating them. So, how should we instead evaluate someone’s ability to do good science? This seems quite intangible, and directly relates to the hardship in having the right criteria when hiring a scientist. What are good criteria to estimate someone's ability to do research (rather than more specifically their ability to supervise students, or write good code etc.)? In finding answers to those questions, we may want to shift the balance more to a process- rather than outcome-oriented approach. Whatever ideas we come up with, we must be clear about the fact that whenever quantitative metrics are used as proxies to evaluate and reward scientists, those metrics become subject to exploitation, provided it is easier to exploit them than to do something else (i.e., better research).
-
-Overall, we will need to dare to experiment heavily and see what works. As Stuart Richie’s had put it in [this article](https://asteriskmag.com/issues/1/rebuilding-after-the-replication-crisis), <span style="color:#2E8B57">*"[w]e shouldn’t be afraid to trial and test new and creative ideas, even if they might make science look very different from the status quo a decade ago, or even today.”*</span> As part of a difficult-to-implement yet sustainable long-term systemic solution, [Dienes (2023)](https://royalsocietypublishing.org/doi/full/10.1098/rsos.220808) suggests to <span style="color:#2E8B57">*“[…] radically reform the operation of universities, […] bas[ing them] on existing established open democratic practices.”*</span> Whatever solutions we come up with – it will come with costs, likely take time, and therefore slow things down, at least at the beginning.[^11] But just like with the increasing adoption of open science  practices, building a solid base and making things right from the ground up first can be more effective and beneficial in the long run. This means to take one step back in order to go three steps forward. Slowing down the production of scientific outcomes to build processes conducive to long-term scientific progress will eventually pay off. I think this is the case even if the final processes built make outcome production overall slower, e.g., to ensure scientific rigour. In that case, prioritizing what to do research on will be key which, in times of too many studies being conducted, would be a good thing. In this context, the [Importance-Tractability-Neglectedness framework](https://forum.effectivealtruism.org/topics/itn-framework) which is a core method in the [Effective Altruism](https://www.effectivealtruism.org/) movement (coming from science) for prioritizing which problems are most impactful to work on might be an option[^12], or using [impact certificates](https://metascience.info/events/accelerating-academic-research-with-impact-certificates/) to accelerate academic research. [This post](https://forum.effectivealtruism.org/posts/DcNB2Z2tKLe6migqk/why-scientific-research-is-less-effective-in-producing-value) identifies reasons why the choice of research questions is often poor: difficulties in getting an overview of the field, bad publishing priorities of journals, bad funding priorities of grantmakers, too short-term projects, lack of creativity and boldness, as well as lack of connection with the end-user in the design of research question. The Importance-Tractability-Neglectedness framework could also be applied to the topic of improving academia as an institution itself.
-
 <html align="left" lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -891,6 +888,9 @@ Overall, we will need to dare to experiment heavily and see what works. As Stuar
   </body>
 </html>
 
+We may need to fundamentally re-build the academic space under different assumptions and principles. This will also entail a re-assessment of how we evaluate research, and, consequently, a scientist – what do we think should distinguish a “successful” from an “unsuccessful” research project, and what is a good researcher? Regarding the latter, is the criterion productivity? People will produce a lot of low quality research. Is the criterion to publish in high-impact journals? People will do fraudulent science to do so. Is the criterion the future career of students? People will select students with promising profiles rather than educating them. So, how should we instead evaluate someone’s ability to do good science? This seems quite intangible, and directly relates to the hardship in having the right criteria when hiring a scientist. What are good criteria to estimate someone's ability to do research (rather than more specifically their ability to supervise students, or write good code etc.)? In finding answers to those questions, we may want to shift the balance more to a process- rather than outcome-oriented approach. Whatever ideas we come up with, we must be clear about the fact that whenever quantitative metrics are used as proxies to evaluate and reward scientists, those metrics become subject to exploitation, provided it is easier to exploit them than to do something else (i.e., better research).
+
+Overall, we will need to dare to experiment heavily and see what works. As Stuart Richie’s had put it in [this article](https://asteriskmag.com/issues/1/rebuilding-after-the-replication-crisis), <span style="color:#2E8B57">*"[w]e shouldn’t be afraid to trial and test new and creative ideas, even if they might make science look very different from the status quo a decade ago, or even today.”*</span> As part of a difficult-to-implement yet sustainable long-term systemic solution, [Dienes (2023)](https://royalsocietypublishing.org/doi/full/10.1098/rsos.220808) suggests to <span style="color:#2E8B57">*“[…] radically reform the operation of universities, […] bas[ing them] on existing established open democratic practices.”*</span> Whatever solutions we come up with – it will come with costs, likely take time, and therefore slow things down, at least at the beginning.[^11] But just like with the increasing adoption of open science  practices, building a solid base and making things right from the ground up first can be more effective and beneficial in the long run. This means to take one step back in order to go three steps forward. Slowing down the production of scientific outcomes to build processes conducive to long-term scientific progress will eventually pay off. I think this is the case even if the final processes built make outcome production overall slower, e.g., to ensure scientific rigour. In that case, prioritizing what to do research on will be key which, in times of too many studies being conducted, would be a good thing. In this context, the [Importance-Tractability-Neglectedness framework](https://forum.effectivealtruism.org/topics/itn-framework) which is a core method in the [Effective Altruism](https://www.effectivealtruism.org/) movement (coming from science) for prioritizing which problems are most impactful to work on might be an option[^12], or using [impact certificates](https://metascience.info/events/accelerating-academic-research-with-impact-certificates/) to accelerate academic research. [This post](https://forum.effectivealtruism.org/posts/DcNB2Z2tKLe6migqk/why-scientific-research-is-less-effective-in-producing-value) identifies reasons why the choice of research questions is often poor: difficulties in getting an overview of the field, bad publishing priorities of journals, bad funding priorities of grantmakers, too short-term projects, lack of creativity and boldness, as well as lack of connection with the end-user in the design of research question. The Importance-Tractability-Neglectedness framework could also be applied to the topic of improving academia as an institution itself.
 
 It is hard for humans to prioritize solutions that are optimal in the long-term, but come with middle or short-term costs. Yet, at no other point in time were we that much in a position – could we afford to that extent – to think about the long-term future and be guided by it in the actions we take today.[^13] Long-term solutions particularly rely on people acting in concert. While it is challenging to distinguish problems that greatly require joined forces from those which don’t, getting the incentives in academia right certainly is a collective, global endeavour and therefore belongs to the former category.
 
