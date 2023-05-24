@@ -172,7 +172,7 @@ I find it very crucial to have more research projects or tasks where people are 
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 325px;
+        width: 425px;
         padding: 10px;
         border-radius: 10px;
         align-self: right;
@@ -225,7 +225,7 @@ To make collaboration work in the science space, we also need to acknowledge the
 
 Moreover, people forming a coalition to work on a project will depend on further feedback from people outside of it – just like one person may engage in false/problematic beliefs or bad practices, so may groups of people. Thus, a group will likewise rely on external corrective input. There’s a sweet spot to be found in terms of how varied this input should be, but as a heuristic, the more pluralistic it is, the more people can get the best out of their projects. 
 
-<html align="right" lang="en">
+<html align="left" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -241,8 +241,8 @@ Moreover, people forming a coalition to work on a project will depend on further
         width: 325px;
         padding: 10px;
         border-radius: 10px;
-        align-self: right;
-        float: right;
+        align-self: left;
+        float: left;
       }
     </style>
   </head>
@@ -301,7 +301,7 @@ To be clear, I am not suggesting that science should operate exactly in some way
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 325px;
+        width: 425px;
         padding: 10px;
         border-radius: 10px;
         align-self: left;
@@ -336,7 +336,7 @@ But the point here is not to argue for or against any particular working structu
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 325px;
+        width: 425px;
         padding: 10px;
         border-radius: 10px;
         align-self: left;
@@ -379,7 +379,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01c_IMG_2302_01_01.jpg" alt="MarineGEO circle logo" style="height: 375px; width: 575px;" />
+  <img src="/images/01c_IMG_2302_01_01.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
   <figcaption>
     Rhinog Fawr, Wales. (CC-BY-SA 4.0)
     <br>
@@ -475,7 +475,7 @@ Yarkoni’s fundamental critique of psychological research had elicited a big nu
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 325px;
+        width: 425px;
         padding: 10px;
         border-radius: 10px;
         align-self: left;
@@ -495,9 +495,6 @@ So… it can all get quite complicated. There is more to say to the struggles in
 
 ### 3.2 Why collaboration and feedback help <a name="collaboration_feedback_help"></a>
 I had earlier claimed that the mind sciences may particularly benefit from people being more in exchange and working collaboratively – this is in order to develop a shared understanding of the subject as well as common ground of knowledge, thereby increasing responsibility towards a common shared goal or agenda. 
-
-As I had already said above, people forming a coalition may also reinforce each other in believing something that is false or problematic, or in engaging in bad practices which is why a group will rely no less on external corrective input than a single person. While collaborations and embedment into greater feedback loops do not guarantee that truth will be found, they come with some useful error-correction mechanisms (such as code review, questioning of assumptions, experimental designs, reviewing results, to name a few) built in. To restate my former belief, I think that collaboration and feedback at various levels do raise the probability that wrong ideas are replaced by (slightly) less wrong ideas incrementally, or that there’s at least a better idea of where the barriers are. This of course applies to science in general, but may be particularly valid for the mind sciences, as it can be so easy to get things wrong in those fields – the research methodology is, in a way, much more complicated than in, e. g., fields like mathematics or particle physics, as it’s less unequivocally right or wrong. Hence, the need to *debate* what good research methodology is is much higher.
-
 <html align="left" lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -527,6 +524,8 @@ As I had already said above, people forming a coalition may also reinforce each 
   </body>
 </html>
 
+As I had already said above, people forming a coalition may also reinforce each other in believing something that is false or problematic, or in engaging in bad practices which is why a group will rely no less on external corrective input than a single person. While collaborations and embedment into greater feedback loops do not guarantee that truth will be found, they come with some useful error-correction mechanisms (such as code review, questioning of assumptions, experimental designs, reviewing results, to name a few) built in. To restate my former belief, I think that collaboration and feedback at various levels do raise the probability that wrong ideas are replaced by (slightly) less wrong ideas incrementally, or that there’s at least a better idea of where the barriers are. This of course applies to science in general, but may be particularly valid for the mind sciences, as it can be so easy to get things wrong in those fields – the research methodology is, in a way, much more complicated than in, e. g., fields like mathematics or particle physics, as it’s less unequivocally right or wrong. Hence, the need to *debate* what good research methodology is is much higher.
+
 Error correction in the mind sciences may be particularly successful, if collaboration happens between, and/or feedback comes from, people with very different disciplinary lenses on a given topic – something that is of utmost importance in the interdisciplinary nature of the mind sciences (see more on that in the following section).
 
 <style>
@@ -547,7 +546,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01d_IMG_6507.jpg" alt="MarineGEO circle logo" style="height: 375px; width: 575px;" />
+  <img src="/images/01d_IMG_6507.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
   <figcaption>
     Ashdown Forest, East Sussex. (CC-BY-SA 4.0)
     <br>
@@ -561,6 +560,8 @@ As things stand, the nature of the knowledge produced in the mind sciences makes
 
 ### 3.3 Towards a shared, multi-disciplinary understanding of the subject of study <a name="shared_interdisciplinary_understanding"></a>
 It is currently hard to come up with a  good research objective and a good corresponding method in the mind sciences, exactly because they are in this messy state. One must consult a lot of philosophy of science and meta-science questions, but also practical as well as value-based ones – what does work practically, and what is valuable to pursue? 
+
+Being embedded in close collaborations as well as in a greater social/interdisciplinary context which encourages exchange on those fronts may help to overcome a “crisis of purpose”, as Jessica Thompson (2021) had put it in her paper on [Forms of explanation and understanding for neuroscience and artificial intelligence](https://journals.physiology.org/doi/full/10.1152/jn.00195.2021). Many folks – particularly early career researchers –  will resonate with the following excerpt:
 
 <html align="left" lang="en">
   <head>
@@ -591,8 +592,6 @@ It is currently hard to come up with a  good research objective and a good corre
   </body>
 </html>
 
-Being embedded in close collaborations as well as in a greater social/interdisciplinary context which encourages exchange on those fronts may help to overcome a “crisis of purpose”, as Jessica Thompson (2021) had put it in her paper on [Forms of explanation and understanding for neuroscience and artificial intelligence](https://journals.physiology.org/doi/full/10.1152/jn.00195.2021). Many folks – particularly early career researchers –  will resonate with the following excerpt:
-
 > <span style="color:#2E8B57">*“Many junior scientists go through a period of questioning or a crisis of purpose at some point during their training. Perhaps especially because of the diverse background assumptions of my collaborators, I was encouraged to question the most basic aspects of my research. Why was I doing this research? To what scientific goal would my research contribute? How were the proposed methods suited to that goal? I found it very challenging to situate my research into a broader scientific enterprise. I could not easily describe how what I was working on would somehow bring my community closer to some ultimate goal. I wanted to “discover the computational mechanisms underlying auditory perception” but I couldn’t precisely tell you what that meant or how I would know whether I had succeeded at taking a useful step towards that goal.”*</span>
 
 She, too, emphasizes that people need to cooperate with people from different backgrounds to do science well, “particularly in the interdisciplinary field of neuroscience which most likely lacks a single theory of explanation to account for all explanation”:
@@ -602,7 +601,7 @@ Explanations are not typically the product of individual experiments or even ind
 
 Thus, neuroscience, and I’d say the mind sciences more broadly, face particular challenges that can be better overcome, if folks work together.
 
-## 4.0 Towards moral values in science <a name="moral_values"></a>
+## 4.0 Towards *moral values* in science <a name="moral_values"></a>
 The benefit of joining forces extends to science at large – including all disciplines. As I’ve been arguing throughout this post, this likely produces both better science and happier scientists. This has a strong moral side to it that I would like to make very explicit in this section.
 
 In their paper [Beyond kindness: a proposal for the flourishing of science and scientists](https://hal.science/hal-04021720/), Dienes et al. (2022) suggest that in order to do science well, we need to adhere to the values of science itself and <span style="color:#2E8B57">*“[…] recast [it] from a competitively managed activity of knowledge production to a collaboratively organized moral practice that puts kindness and sharing at its core.”*</span> They build correspondences between the values of science and an ethical framework of flourishing derived from the Buddhist tradition comprising four “immeasurable values”:
@@ -703,7 +702,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01e_DSCF3231_01.jpg" alt="MarineGEO circle logo" style="height: 375px; width: 575px;" />
+  <img src="/images/01e_DSCF3231_01.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
   <figcaption>
     The Saddle, next to Forcan Ridge, Scotland. (CC-BY-SA 4.0)
     <br>
@@ -875,7 +874,7 @@ Overall, we will need to dare to experiment heavily and see what works. As Stuar
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 325px;
+        width: 425px;
         padding: 10px;
         border-radius: 10px;
         align-self: left;
@@ -907,7 +906,7 @@ It is hard for humans to prioritize solutions that are optimal in the long-term,
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 325px;
+        width: 425px;
         padding: 10px;
         border-radius: 10px;
         align-self: right;
@@ -945,7 +944,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01f_DSCF3632_01_01.jpg" alt="MarineGEO circle logo" style="height: 375px; width: 575px;" />
+  <img src="/images/01f_DSCF3632_01_01.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
   <figcaption>
     Sandwood Bay, Scotland. (CC-BY-SA 4.0)
     <br>
