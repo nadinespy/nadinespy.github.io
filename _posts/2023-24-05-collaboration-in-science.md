@@ -321,8 +321,6 @@ Good feedback systems and working structures in science would not only make the 
 
 ### 2.4 Are collaborative structures stifling scientific creativity? <a name="scientific_creativity"></a>
 Some folks may argue that working with people closely effectively slows down productivity, or that it stifles creativity by imposing too many constraints, or giving too much unnecessary structure. Personally, I believe this is a somewhat romanticised view of science that doesn’t fit the 21st century. Of course, for some people and projects, an individualistic, more isolated approach to work might be best, so it’s, in part, a matter of personal fit. And there is a general tension between collaboration and letting people do their own stuff – for some projects, there can be sharp diminishing returns in adding new people, and there is a coordination cost. As always, flexibility in accommodating people and project needs is hugely important. 
-But the point here is not to argue for or against any particular working structure in an absolute way. Rather, I want to point to large patterns in how people experience doing science, and how ubiquitously incentives and working structures in academia work against people’s well-being and against doing good science. The way science is currently done is not the best way for a lot of people. From what I’ve been hearing from many fellow academics is that people’s productivity is stifled exactly because they are left alone and feel that what they do does not matter to anyone and anything, reducing their works’ quality along the way. 
-
 <html align="left" lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -351,6 +349,7 @@ But the point here is not to argue for or against any particular working structu
     </div>
   </body>
 </html>
+But the point here is not to argue for or against any particular working structure in an absolute way. Rather, I want to point to large patterns in how people experience doing science, and how ubiquitously incentives and working structures in academia work against people’s well-being and against doing good science. The way science is currently done is not the best way for a lot of people. From what I’ve been hearing from many fellow academics is that people’s productivity is stifled exactly because they are left alone and feel that what they do does not matter to anyone and anything, reducing their works’ quality along the way. 
 
 To be clear, I think creativity, in its chaotically structureless, almost artistic sense, is part of science – there may often be creative elements or processes involved in generating ideas or finding solutions to problems at different stages in a research project. I do not think at all that such creativity stands in contradiction with collaborative working structures.
 
