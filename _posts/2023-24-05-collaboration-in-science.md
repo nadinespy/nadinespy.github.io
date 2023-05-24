@@ -147,7 +147,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
+  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
   <figcaption>
     Somewhere on the Snowdon Horseshoe, Wales. (CC-BY-SA 4.0)
     <br>
@@ -277,7 +277,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01b_IMG_6490_03.jpg" alt="MarineGEO circle logo" style="height: 375px; width: 575px;" />
+  <img src="/images/01b_IMG_6490_03.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
   <figcaption>
     Ashdown Forest, East Sussex. (CC-BY-SA 4.0)
     <br>
@@ -511,7 +511,7 @@ As I had already said above, people forming a coalition may also reinforce each 
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 325px;
+        width: 425px;
         padding: 10px;
         border-radius: 10px;
         align-self: left;
