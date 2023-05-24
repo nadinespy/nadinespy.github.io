@@ -147,7 +147,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
+  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
   <figcaption>
     Somewhere on the Snowdon Horseshoe, Wales. (CC-BY-SA 4.0)
     <br>
@@ -225,7 +225,7 @@ To make collaboration work in the science space, we also need to acknowledge the
 
 Moreover, people forming a coalition to work on a project will depend on further feedback from people outside of it – just like one person may engage in false/problematic beliefs or bad practices, so may groups of people. Thus, a group will likewise rely on external corrective input. There’s a sweet spot to be found in terms of how varied this input should be, but as a heuristic, the more pluralistic it is, the more people can get the best out of their projects. 
 
-<html align="left" lang="en">
+<html align="right" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -241,8 +241,8 @@ Moreover, people forming a coalition to work on a project will depend on further
         width: 325px;
         padding: 10px;
         border-radius: 10px;
-        align-self: left;
-        float: left;
+        align-self: right;
+        float: right;
       }
     </style>
   </head>
@@ -277,7 +277,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01b_IMG_6490_03.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
+  <img src="/images/01b_IMG_6490_03.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
   <figcaption>
     Ashdown Forest, East Sussex. (CC-BY-SA 4.0)
     <br>
@@ -379,7 +379,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01c_IMG_2302_01_01.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
+  <img src="/images/01c_IMG_2302_01_01.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
   <figcaption>
     Rhinog Fawr, Wales. (CC-BY-SA 4.0)
     <br>
@@ -546,7 +546,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01d_IMG_6507.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
+  <img src="/images/01d_IMG_6507.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
   <figcaption>
     Ashdown Forest, East Sussex. (CC-BY-SA 4.0)
     <br>
@@ -559,9 +559,6 @@ hr {
 As things stand, the nature of the knowledge produced in the mind sciences makes it kind of easy to pursue wrong or hardly falsifiable ideas (supported by poor analyses), making it hard for false, ill-defined or useless theories/ideas/narratives to die out (I wrote something related to this in [this Twitter thread](https://twitter.com/NadineSpychala/status/1577312204927500290) preceding the symposium mentioned at the beginning).[^7] In a way, one can argue that exactly because the mind sciences have faced these kinds of problems from the very beginning that more “exact” sciences haven’t, there may be already a better understanding of how to handle them. For instance, recent, more empirical branches of physics where statistical inferences are equally done, hypotheses tested, and where the topic of investigation is not a general theory with very high predictive power may face similar problems, but have less matured yet to deal with those. Notwithstanding, the mind sciences have not (yet) matured enough, and a lot of the current knowledge produced will remain to be noise and eventually die out. They are still in a very messy, or, as some may state, pre-paradigmatic stage ([Kuhn, 2012](https://www.jstor.org/stable/2183664)).
 
 ### 3.3 Towards a shared, multi-disciplinary understanding of the subject of study <a name="shared_interdisciplinary_understanding"></a>
-It is currently hard to come up with a  good research objective and a good corresponding method in the mind sciences, exactly because they are in this messy state. One must consult a lot of philosophy of science and meta-science questions, but also practical as well as value-based ones – what does work practically, and what is valuable to pursue? 
-
-Being embedded in close collaborations as well as in a greater social/interdisciplinary context which encourages exchange on those fronts may help to overcome a “crisis of purpose”, as Jessica Thompson (2021) had put it in her paper on [Forms of explanation and understanding for neuroscience and artificial intelligence](https://journals.physiology.org/doi/full/10.1152/jn.00195.2021). Many folks – particularly early career researchers –  will resonate with the following excerpt:
 
 <html align="left" lang="en">
   <head>
@@ -587,10 +584,14 @@ Being embedded in close collaborations as well as in a greater social/interdisci
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed10"  >
-      Thompson emphasizes that we need to cooperate – with people with different backgrounds – to do science well, *“particularly in the interdisciplinary field of neuroscience which most likely lacks a single theory of explanation to account for all explanation.”*
+      Thompson emphasizes that we need to cooperate – with people with different backgrounds – to do science well, “particularly in the interdisciplinary field of neuroscience which most likely lacks a single theory of explanation to account for all explanation.”
     </div>
   </body>
 </html>
+
+It is currently hard to come up with a  good research objective and a good corresponding method in the mind sciences, exactly because they are in this messy state. One must consult a lot of philosophy of science and meta-science questions, but also practical as well as value-based ones – what does work practically, and what is valuable to pursue? 
+
+Being embedded in close collaborations as well as in a greater social/interdisciplinary context which encourages exchange on those fronts may help to overcome a “crisis of purpose”, as Jessica Thompson (2021) had put it in her paper on [Forms of explanation and understanding for neuroscience and artificial intelligence](https://journals.physiology.org/doi/full/10.1152/jn.00195.2021). Many folks – particularly early career researchers –  will resonate with the following excerpt:
 
 > <span style="color:#2E8B57">*“Many junior scientists go through a period of questioning or a crisis of purpose at some point during their training. Perhaps especially because of the diverse background assumptions of my collaborators, I was encouraged to question the most basic aspects of my research. Why was I doing this research? To what scientific goal would my research contribute? How were the proposed methods suited to that goal? I found it very challenging to situate my research into a broader scientific enterprise. I could not easily describe how what I was working on would somehow bring my community closer to some ultimate goal. I wanted to “discover the computational mechanisms underlying auditory perception” but I couldn’t precisely tell you what that meant or how I would know whether I had succeeded at taking a useful step towards that goal.”*</span>
 
@@ -702,7 +703,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01e_DSCF3231_01.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
+  <img src="/images/01e_DSCF3231_01.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
   <figcaption>
     The Saddle, next to Forcan Ridge, Scotland. (CC-BY-SA 4.0)
     <br>
@@ -944,7 +945,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01f_DSCF3632_01_01.jpg" alt="MarineGEO circle logo" style="height: 488px; width: 748px;" />
+  <img src="/images/01f_DSCF3632_01_01.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
   <figcaption>
     Sandwood Bay, Scotland. (CC-BY-SA 4.0)
     <br>
