@@ -494,7 +494,7 @@ So… it can all get quite complicated. There is more to say to the struggles in
 
 ### 3.2 Why collaboration and feedback help <a name="collaboration_feedback_help"></a>
 I had earlier claimed that the mind sciences may particularly benefit from people being more in exchange and working collaboratively – this is in order to develop a shared understanding of the subject as well as common ground of knowledge, thereby increasing responsibility towards a common shared goal or agenda. 
-<html align="left" lang="en">
+<html align="right" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -510,8 +510,8 @@ I had earlier claimed that the mind sciences may particularly benefit from peopl
         width: 425px;
         padding: 10px;
         border-radius: 10px;
-        align-self: left;
-        float: left;
+        align-self: right;
+        float: right;
       }
     </style>
   </head>
