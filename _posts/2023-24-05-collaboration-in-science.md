@@ -4,7 +4,7 @@ output:
     keep_md: true
 
 title: "Collaboration in Science: Happier People ↔  Better Research"
-date: 2023-05-16
+date: 2023-05-25
 permalink: /posts/2023/05/collaboration-in-science-happier-people-better-research/
 tags:
   - snippets<a name="collaboration_feedback_help"></a>
@@ -76,7 +76,7 @@ Being the sole investigator is an unfortunate situation: the risk of being too c
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 325px;
+        width: 425px;
         padding: 10px;
         border-radius: 10px;
         align-self: left;
@@ -87,7 +87,7 @@ Being the sole investigator is an unfortunate situation: the risk of being too c
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed1"  >
-     Most of the time, only one person is deeply involved in a given project. While everyone in academia is terrified by the potential flaws that remain undiscovered in their work, everyone equally accepts and/or ignores this (willingly or unwillingly) – because that’s the practice, and it’s hard to go against it.    
+     Most of the time, only one person is deeply involved in a given project. While everyone in academia is terrified by the potential flaws that remain undiscovered in their work, everyone equally accepts and/or ignores this (willingly or unwillingly) – because that’s the practice, and it’s hard to go against it.
     </div>
   </body>
 </html>
@@ -147,7 +147,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 2592px; width: 3888px;" />
+  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
   <figcaption>
     Somewhere on the Snowdon Horseshoe, Wales. (CC-BY-SA 4.0)
     <br>
