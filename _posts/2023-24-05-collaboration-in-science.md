@@ -37,7 +37,7 @@ Shifting from individualistic to collaborative work in academia can improve scie
 	1. [On the nature of the mind sciences](#nature_mind_sciences)
 	2. [Why collaboration and feedback help](#collaboration_feedback_help)
 	3. [Towards a shared, multi-disciplinary understanding of the subject of study](#shared_interdisciplinary_understanding)
-4. [Towards moral values in science](#moral_values)
+4. [Towards *moral values* in science](#moral_values)
 5. [How incentives prevent us from rigorous and value-based science & what change is needed](#academic_incentives)
 	1. [Current incentives in academia](#current_incentives)
 	2. [Rebuilding the academic space - a quest for experiments and prioritizing long-term 	benefits](#experiments_longterm_benefits)
@@ -310,7 +310,7 @@ hr {
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed5"  >
-     In an increasingly complex world where technology progresses rapidly, fields of knowledge get more and more differentiated, the world more inter-connected, and the amount of knowledge people more vast, the scientific community would do better, **on average**, if we’d have solid feedback loops and collaborative patterns in place.
+     In an increasingly complex world where technology progresses rapidly, fields of knowledge get more and more differentiated, the world more inter-connected, and the amount of knowledge people more vast, the scientific community would do better, on average, if we’d have solid feedback loops and collaborative patterns in place.
     </div>
   </body>
 </html>
@@ -320,6 +320,8 @@ To be clear, I am not suggesting that science should operate exactly in some way
 Good feedback systems and working structures in science would not only make the scientific domain better, but the world at large: to not stagnate, but make further progress in the 21st century, we, in fact, need more people working in science. This, in turn, would call for and require true and functioning collaboration (something that Will MacAskill did emphasize, too, in his book [What We Owe The Future](https://whatweowethefuture.com/uk/).
 
 ### 2.4 Are collaborative structures stifling scientific creativity? <a name="scientific_creativity"></a>
+Some folks may argue that working with people closely effectively slows down productivity, or that it stifles creativity by imposing too many constraints, or giving too much unnecessary structure. Personally, I believe this is a somewhat romanticised view of science that doesn’t fit the 21st century. Of course, for some people and projects, an individualistic, more isolated approach to work might be best, so it’s, in part, a matter of personal fit. And there is a general tension between collaboration and letting people do their own stuff – for some projects, there can be sharp diminishing returns in adding new people, and there is a coordination cost. As always, flexibility in accommodating people and project needs is hugely important. 
+But the point here is not to argue for or against any particular working structure in an absolute way. Rather, I want to point to large patterns in how people experience doing science, and how ubiquitously incentives and working structures in academia work against people’s well-being and against doing good science. The way science is currently done is not the best way for a lot of people. From what I’ve been hearing from many fellow academics is that people’s productivity is stifled exactly because they are left alone and feel that what they do does not matter to anyone and anything, reducing their works’ quality along the way. 
 
 <html align="left" lang="en">
   <head>
@@ -349,10 +351,6 @@ Good feedback systems and working structures in science would not only make the 
     </div>
   </body>
 </html>
-
-Some folks may argue that working with people closely effectively slows down productivity, or that it stifles creativity by imposing too many constraints, or giving too much unnecessary structure. Personally, I believe this is a somewhat romanticised view of science that doesn’t fit the 21st century. Of course, for some people and projects, an individualistic, more isolated approach to work might be best, so it’s, in part, a matter of personal fit. And there is a general tension between collaboration and letting people do their own stuff – for some projects, there can be sharp diminishing returns in adding new people, and there is a coordination cost. As always, flexibility in accommodating people and project needs is hugely important. 
-But the point here is not to argue for or against any particular working structure in an absolute way. Rather, I want to point to large patterns in how people experience doing science, and how ubiquitously incentives and working structures in academia work against people’s well-being and against doing good science. The way science is currently done is not the best way for a lot of people. From what I’ve been hearing from many fellow academics is that people’s productivity is stifled exactly because they are left alone and feel that what they do does not matter to anyone and anything, reducing their works’ quality along the way. 
-
 
 To be clear, I think creativity, in its chaotically structureless, almost artistic sense, is part of science – there may often be creative elements or processes involved in generating ideas or finding solutions to problems at different stages in a research project. I do not think at all that such creativity stands in contradiction with collaborative working structures.
 
