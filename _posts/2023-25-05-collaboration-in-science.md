@@ -192,7 +192,7 @@ Everyone who has worked with another individual or a group of people truly colla
 Collaboration is also more fun than the current hyper-competitive, individualistic culture that dominates the research space, as people have more certainty, less isolation, and therefore less toxicity in their work environment – a win-win situation for both people and science. It would be in the interest of science – and, as a consequence, of society – to implement more collaborative patterns of that form. *Mistakes/redundancies would be avoided or discovered more quickly which would accelerate the progress curve*. This is a more sustainable way to move in the right direction faster.
 
 ### 2.2 Have more task division, external feedback, and exchange up the hierarchy <a name="task_feedback_division_exchange"></a>
-To make collaboration work in the science space, we also need to acknowledge the merit of task division, and have a less strict division between “scientists” and “supporters” (such as, e.g., research software engineers, research data stewards, research infrastructure developers, research computing support officers, research community managers etc.) when crediting research contributions. Although people in non-traditional, but research-related roles often do contribute to research in a significant manner, their work is systematically undervalued. Good collaboration comes with crediting everyone’s contribution appropriately.  
+To make collaboration work in the science space, we also need to acknowledge the merit of task division, and have a less strict division between “scientists” and “supporters” (such as, e.g., research software engineers, research data stewards, research infrastructure developers, research computing support officers, research community managers etc.) when crediting research contributions. Although people in non-traditional, but research-related roles often do contribute to research in a significant manner, their work is systematically undervalued. Good collaboration comes with crediting everyone’s contribution appropriately.
 
 <html align="right" lang="en">
   <head>
@@ -345,7 +345,7 @@ Some folks may argue that working with people closely effectively slows down pro
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed6"  >
-     Flexibility in accommodating people and project needs is crucial. The point here is not to argue for or against any particular working structure in an absolute way. I don’t know what the best working structures for science at large are. We’d simply need to start experimenting more, and figure out what works.    
+     Flexibility in accommodating people and project needs is crucial. The point here is not to argue for or against any particular working structure in an absolute way. I don’t know what the best working structures for science at large are. We’d simply need to start experimenting more, and figure out what works.
     </div>
   </body>
 </html>
@@ -431,7 +431,7 @@ Another obfuscating factor is, e. g., the “crud factor”: the fact that in ps
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed7"  >
-     In the mind sciences, there are less unequivocal ways of verifying/falsifying ideas similar to physics, so there is less of an “external force” to agree on (and subsequently refer to) common established knowledge.    
+     In the mind sciences, there are less unequivocal ways of verifying/falsifying ideas similar to physics, so there is less of an “external force” to agree on (and subsequently refer to) common established knowledge.
     </div>
   </body>
 </html>
@@ -518,7 +518,7 @@ I had earlier claimed that the mind sciences may particularly benefit from peopl
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed9"  >
-      The mind sciences may particularly benefit from more collaboration and greater feedback loops in order to develop a shared understanding of the subject, and replace wrong ideas by (slightly) less wrong ideas incrementally. This is particularly true, if collaboration happens between, and/or feedback comes from, people with very different disciplinary lenses on a topic.  
+      The mind sciences may particularly benefit from more collaboration and greater feedback loops in order to develop a shared understanding of the subject, and replace wrong ideas by (slightly) less wrong ideas incrementally. This is particularly true, if collaboration happens between, and/or feedback comes from, people with very different disciplinary lenses on a topic.
     </div>
   </body>
 </html>
