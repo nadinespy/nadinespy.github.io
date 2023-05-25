@@ -12,7 +12,7 @@ tags:
 
 ## TL;DR
 
-Shifting from individualistic to collaborative work in academia can improve scientific progress and increase well-being. This may be particularly important in the mind sciences where correct research methodology is challenging. Current academic incentives hinder collaboration, favouring narcissistic or anti-social personalities. Fundamental change may require rebuilding the academic space with different principles, accepting temporary instability for long-term benefits.
+Shifting from individualistic to collaborative work in academia can improve scientific progress and increase well-being. This may be particularly important in the mind sciences where correct research methodology is challenging. Current academic incentives hinder collaboration, favouring rather narcissistic or anti-social personalities. Fundamental change may require rebuilding the academic space with different principles, accepting temporary instability for long-term benefits.
 
 ## Blog post summary (longer TL;DR)
 * This post talks about the importance of shifting working structures in academia from individual to more collaborative work. Most of the time, only one person is deeply involved in a research project, resulting in slow progress and flawed science, and a lot of suffering on the scientist’s side.
