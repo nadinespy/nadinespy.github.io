@@ -1002,9 +1002,9 @@ I am also grateful for the feedback I’ve received from Zoltan Dienes and Dhruv
 ### Scientific papers <a name="scientific_papers"></a>
 Dienes, Z. (2023). The credibility crisis and democratic governance: How to reform university governance to be compatible with the nature of science. Royal Society Open Science, 10(1), 220808.
 
-Dienes, Z., Fucci, E., Rees, M. G., Lübbert, A., Schumann, F., Van Vugt, M. (2022). Beyond kindness: a proposal for the flourishing of science and scientists.
-
 Dijstelbloem, H., Huisman, F., Miedema, F., & Mijnhardt, W. (2014). Science in Transition Status Report: Debate, Progress and Recommendations. Online verfügbar unter http://www. scienceintransition. nl/wp-content/uploads/2014/07/Science-in-Transition-Status-Report-June-2014. pdf, zuletzt geprüft am, 19, 2014.
+
+Flourishing Science Think Tank (2022): Dienes, Z., Fucci, E., Rees, M. G., Lübbert, A., Schumann, F., Van Vugt, M. Beyond kindness: a proposal for the flourishing of science and scientists.
 
 Gau, R., Noble, S., Heuer, K., Bottenhorn, K. L., Bilgin, I. P., Yang, Y. F., ... & Marinazzo, D. (2021). Brainhack: Developing a culture of open, inclusive, community-driven neuroscience. Neuron, 109(11), 1769-1775.
 
@@ -1015,6 +1015,8 @@ Ioannidis, J. P., Klavans, R., & Boyack, K. W. (2018). Thousands of scientists p
 Kuhn, T. S. (2012). The structure of scientific revolutions. University of Chicago press.
 
 Lakens, D., Uygun Tunç, D. U. Y. G. U., & Tunc, M. (2022). There is no generalizability crisis Comment. Behavioral and Brain Sciences, 45.
+
+Marblestone, A., Gamick, A., Kalil, T., Martin, C., Cvitkovic, M., & Rodriques, S. G. (2022). Unblock research bottlenecks with non-profit start-ups. Nature, 601(7892), 188-190.
 
 Meehl, P. E. (1990). Why summaries of research on psychological theories are often uninterpretable. Psychological reports, 66(1), 195-244.
 
@@ -1077,7 +1079,9 @@ https://twitter.com/NadineSpychala/status/1577312204927500290)
 
 [Metascience Conference](https://metascience.info/) 
 
-[Staring into the abyss as a core life skill](https://www.benkuhn.net/abyss/) 
+[Staring into the abyss as a core life skill](https://www.benkuhn.net/abyss/)
+
+[Clearer Thinking Podcast Episode 157: Science is learning from start-ups (with Adam Marblestone)](https://podcast.clearerthinking.org/episode/157/adam-marblestone-science-is-learning-from-start-ups)  
 
 [The Mythical Man-Month](https://en.wikipedia.org/wiki/The_Mythical_Man-Month) 
 
