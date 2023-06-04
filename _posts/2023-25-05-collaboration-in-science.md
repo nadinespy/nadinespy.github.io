@@ -967,7 +967,7 @@ I am thankful to Guillaume Corlouer and Reny Baykova for critically reviewing th
 
 I am very grateful for the feedback I have received from all three of them.
 
-I am also grateful for the feedback I’ve received from Zoltan Dienes and Dhruva Raman after publishing this post. 
+I am also grateful for the feedback I’ve received from Zoltan Dienes, Nicolas Macé and Dhruva Raman that have led to modifications of the post after publishing it.
 
 [^1]: “Computational approaches” denote, in the most basic sense, the usage of somewhat sophisticated maths in one’s research (going beyond things like statistical significance testing which is also using maths – as is anything that is not purely qualitative). In the context of neuroscience, the [Organization for Computational Neurosciences](https://www.cnsorg.org/) (CNS) describes [computational neuroscience](https://www.cnsorg.org/computational-neuroscience) as an <span style="color:#2E8B57">*“[…] interdisciplinary field for development, simulation, and analysis of multi-scale models and theories of neural function from the level of molecules, through cells and networks, up to cognition and behavior.”*</span> I had ventured out to, broadly speaking, study information-theoretic quantities reflecting concepts like emergence and complexity (both are strongly related, but not the same) in complex dynamical systems. 
 
