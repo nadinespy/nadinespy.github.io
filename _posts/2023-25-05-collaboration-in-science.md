@@ -649,7 +649,7 @@ Practically, implementing those values on both individual/small group levels and
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed11"  >
-      Dienes et al. build correspondences between the values of science and an ethical framework of flourishing derived from the Buddhist tradition comprising four “immeasurable values” – impartiality, solidarity, compassion, and empathetic joy.
+      The Flourishing Science Think Tank builds correspondences between the values of science and an ethical framework of flourishing derived from the Buddhist tradition comprising four “immeasurable values” – impartiality, solidarity, compassion, and empathetic joy.
     </div>
   </body>
 </html>
@@ -798,7 +798,7 @@ As stated above, points 1) and 2) hold, to some extent, to any scientific discip
 
 Value-based science is not easy given those status quo incentives. They may lead to, or exacerbate the lack of good and ethical, collaborative science (not sure about the underlying true causal graph here – *it’s complicated*). If we didn’t evaluate the impact of research as well as a researcher’s skills using number of papers and journal impacts, things would certainly look different. Right now, even if the scientific community as a whole wanted to be more collaborative and implement better, robust feedback systems, with the incentives we have, there is just little to no capacity to get this going: everyone is too busy getting their number of papers up. I’ve heard many researchers explicitly say that this is what they were optimizing for, or at the very least have been worrying about. Building good and ethical research processes which foster a strong team- vs. a one-against-all spirit in achieving projects, with feedback from both in- and outside the lab, takes time and would decrease the amount of scientific output in the form of papers tremendously. 
 
-As things stand, I do believe current incentives favour particularly narcissistic and/or sociopathic personalities who are the least likely to change the situation. According to Dienes et al.,
+As things stand, I do believe current incentives favour particularly narcissistic and/or sociopathic personalities who are the least likely to change the situation. According to the Flourishing Science Think Tank,
  
 > <span style="color:#2E8B57">*“large-scale managerial transformation of the academic enterprise [...], [has led] towards increasing hyper-competition that has promoted (too) much ego-centric behavior and (too) little of the moral and collaborative behavior required for ‘doing good science’.”*</span>
 
