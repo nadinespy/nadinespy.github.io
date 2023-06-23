@@ -14,6 +14,8 @@ tags:
 
 Shifting from individualistic to collaborative work in academia can improve scientific progress and increase well-being. This may be particularly important in the mind sciences where correct research methodology is challenging. Current academic incentives hinder collaboration, favouring rather narcissistic or anti-social personalities. Fundamental change may require rebuilding the academic space with different principles, accepting temporary instability for long-term benefits. This post provides both a big picture view and a detailed, comprehensive treatise on the topic of collaboration, with a special focus on the mind sciences, and lots of further resources to look into. 
 
+This post had been cross-posted on the Effective Altruism Forum [here](https://forum.effectivealtruism.org/posts/ADsmx22YwHBwHkzHw/collaboration-in-science-happier-people-less-than-greater) and on LessWrong [here](https://www.lesswrong.com/posts/wLLHh3qx5dMaTcwBa/collaboration-in-science-happier-people-better-research). 
+
 <span style="color:#4682B4"> \#metascience \#collaboration \#researchmethodology \#philosophyofscience \#mindsciences \#academia </span>
 
 ## Blog post summary (longer TL;DR)
