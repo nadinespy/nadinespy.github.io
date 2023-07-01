@@ -31,11 +31,11 @@ This tutorial has been developed and organized by me, [Nadine Spychala](https://
 
 ## How is this tutorial motivated - why collaboration and best research software practices in the first place?
 
-In science, we often want or need to reproduce results to build knowledge incrementally. 
+In science, we often want or need to reproduce results to **build knowledge incrementally**. 
 * If, for some reason, results can't be reproduced, we at least want to understand the steps taken to arrive at the results, i.e., have transparency on the tools used, code written, computations done, and anything else that has been relevant for generating a given research result.
-* However, very often, the steps taken - and particularly the code written -, for generating scientific results are not available, and/or not readily implementable, and/or not sufficiently understandable. 
+* However, very often, the steps taken - and particularly the **code written** -, for generating scientific results are **not available**, and/or **not readily implementable**, and/or **not sufficiently understandable**. 
 
-**The consequences are**:
+The **consequences** are:
 * redundant, or, at worst, wasted work, if reproduction of results is essential, but not possible. This, in the grand scheme of things, greatly slows down scientific progress, 
 * code that is not designed to be possibly re-used – and thus scrutinized by others – runs the risk of being flawed and therefore, in turn, produce, flawed results,
 * it hampers collaboration – something that becomes increasingly important as 
@@ -78,7 +78,7 @@ This tutorial equips you with a solid foundation for working on software develop
 
 Some of you will likely have written much more complex code than the one you’ll encounter in this tutorial, yet we call the skills taught “intermediate”, because for code development in teams, you need more than just the right tools and languages – you need a strategy (best practices) for how you’ll use these tools _as a team_, or at least for potential re-use by people outside your team (that may very well consist only of you). Thus, it’s less about the complexity of the code as such within a self-contained environment, and more about the complexity that arises due to other people either working on it, too, or re-using it for their purposes. 
 
-**Disclaimer**: rather than this being a tutorial about how to do collaborative research software engineering with a particular Python lens, we use **Python as a vehicle to convey fairly general research software engineering principles. Skills and tools taught here, while Python-specific, are transferable to other similar tools and programming languages.
+**Disclaimer**: rather than this being a tutorial about how to do collaborative research software engineering with a particular Python lens, we use **Python as a vehicle to convey fairly general research software engineering principles**. Skills and tools taught here, while Python-specific, are transferable to other similar tools and programming languages.
 
 ## Whom this tutorial is for
 The best way to check whether this tutorial is for you is to browse its contents in the [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn).
