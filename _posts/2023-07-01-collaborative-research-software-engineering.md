@@ -13,7 +13,8 @@ tags:
 
 ### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo
 
-Hello, welcome to the tutorial’s website! :relaxed::four_leaf_clover:
+
+<span style="font-size: 20px;">Hello, welcome to the tutorial’s website!.</span> 🍀😊 
 
 Here, you’ll get an overview on 
 * how the tutorial is motivated, 
@@ -23,11 +24,11 @@ Here, you’ll get an overview on
       
 Once you’ve read through all of it and made up your mind whether you’d like to participate, you can [register via this link](https://docs.google.com/forms/d/1pIvq-IOSUKYBda1qkTdXnuO9GUBJ7rigKNroDUbNNyE/edit).
 
-This is a hybrid event – you can participate online or in-person. In order to take part, you will need to have registered for the [Artificial Life conference](https://2023.alife.org/) (see the conference’s announcement of the tutorial on the conference page [here](https://2023.alife.org/programme/tutorials/) – 8th tutorial from the top –, though it is an outdated description).
+This is a hybrid event – you can participate online or in-person. In order to take part, **you will need to have registered for the [Artificial Life conference](https://2023.alife.org/)** (see the conference’s announcement of the tutorial on the conference page [here](https://2023.alife.org/programme/tutorials/) – 8th tutorial from the top –, though it is an outdated description).
 
 **You can still benefit from this tutorial’s material by going through it yourself** – it is fully documented and includes explanations, code, exercises and solutions, and further resources in this [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn) that will be used throughout the event. You may even reuse the material for your own purposes (read the licence at the end of this main document for that matter).
 
-This tutorial has been developed by me, [Nadine Spychala](https://nadinespy.github.io/) and will be instructed by both me and [Rousslan Dossa](https://dosssman.github.io/). :boom::rocket:
+This tutorial has been developed by me, [Nadine Spychala](https://nadinespy.github.io/), and will be instructed by both me and [Rousslan Dossa](https://dosssman.github.io/). :boom::rocket:
 
 ## How is this tutorial motivated - why collaboration and best research software practices in the first place?
 
@@ -58,21 +59,21 @@ Here, you'll get
 
 This tutorial equips you with a solid foundation for working on software development in a team, using practices that help you write code of higher quality, and that make it easier to develop and sustain code in the future – both by yourself and others. The topics covered concern core, intermediate skills covering important aspects of the software development life-cycle that will be of most use to anyone working collaboratively on code.
 
-At the start, we’ll address 
+**At the start, we’ll address**
 * Integrated Development Environments,
 * Git and GitHub,
 * virtual environments.
 
-Regarding testing software, you’ll learn how to
+**Regarding testing software**, you’ll learn how to
 * ensure that results are correct by using unit testing and scaling it up,
 * debug code & include code coverage,
 * continuous integration.
 
-Regarding software design, you’ll particularly learn about 
+**Regarding software design**, you’ll particularly learn about 
 * object-oriented programming, and 
 * functional programming.
 
-With respect to improving software and preparing it for reuse, you’ll hear about
+**With respect to improving software and preparing it for reuse**, you’ll hear about
 * code review, and
 * packaging code for release and distribution.
 
@@ -103,7 +104,7 @@ It is suitable for all career levels – from students to (very) senior research
         color: #4682B4;
         border: 1px solid #4682B4;
         margin: 10px;
-        width: 800px;
+        width: 700px;
         padding: 10px;
         border-radius: 10px;
         align-self: right;
@@ -114,7 +115,7 @@ It is suitable for all career levels – from students to (very) senior research
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed5"  >
-     If you’re keen on learning how to restructure existing code such that it is more robust, reusable and maintainable, automate the process of testing and verifying software correctness, and collaboratively work with others in a way that mimics a typical software development process within a team, then we’re looking forward to you!
+     If you’re keen on learning how to restructure existing code such that it is more robust, reusable and maintainable, automate the process of testing and verifying software correctness, and collaboratively work with others in a way that mimics a typical software development process within a team, then **we’re looking forward to you**!
     </div>
   </body>
 </html>
