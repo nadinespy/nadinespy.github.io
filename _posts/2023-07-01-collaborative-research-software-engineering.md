@@ -127,11 +127,9 @@ It is suitable for all career levels – from students to (very) senior research
   - Thus, the only thing you will need for this tutorial is an account on [GitHub](https://github.com/). More on GitHub CodeSpaces in the [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn).
 
 ## Acknowledgments
-I am grateful to [Matthew Bluteau](https://www.software.ac.uk/about/fellows/matthew-bluteau) as well as [Iain Barrass](https://www.software.ac.uk/about/fellows/iain-barrass) who kindly gave me some feedback on the tutorial.
+I am grateful to [Matthew Bluteau](https://www.software.ac.uk/about/fellows/matthew-bluteau) as well as [Iain Barrass](https://www.software.ac.uk/about/fellows/iain-barrass) who kindly gave me some feedback on the tutorial. I also want to thank [Masami Yamaguchi](https://www.linkedin.com/in/masami-yamaguchi-93678558/) for giving input on organizational matters.
 
-I want to thank [Masami Yamaguchi](https://www.linkedin.com/in/masami-yamaguchi-93678558/) for giving input on organizational matters.
-
-I am also grateful to the [Software Sustainability Institute](https://www.software.ac.uk/) which supports this tutorial via my Fellowship.
+I am grateful to the [Software Sustainability Institute](https://www.software.ac.uk/) which supports this tutorial via my Fellowship.
 
 Finally, I am very grateful to [Rousslan Dossa](https://dosssman.github.io/) who contributes his skills and expertise by co-instructing the tutorial, and giving valuable input on its content. I am very grateful for the time that he is willing to dedicate to this event, thereby supporting the adoption of best practices in research software engineering. 🙏🌺
 
