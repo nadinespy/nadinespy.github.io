@@ -13,7 +13,7 @@ tags:
 
 ### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo
 <br>
-<span style="font-size: 25px; color:#2E8B57">**Hello, welcome to the tutorial’s website!**</span> 🍀🙂 
+<span style="font-size: 25px; color:#2E8B57">**Hello, welcome to the tutorial’s website!**</span> 🙂🍀 
 
 Here, you’ll get an overview on 
 * how the tutorial is motivated, 
@@ -27,7 +27,7 @@ This is a hybrid event – you can participate online or in-person. In order to 
 
 **You can still benefit from this tutorial’s material by going through it yourself** – it is fully documented and includes explanations, code, exercises and solutions, and further resources in this [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn) that will be used throughout the event. You may even reuse the material for your own purposes (read the licence at the end of this main document for that matter).
 
-This tutorial has been developed by me, [Nadine Spychala](https://nadinespy.github.io/about-me/), and will be instructed by both me and [Rousslan Dossa](https://dosssman.github.io/). 💥🚀
+This tutorial has been developed and organized by me, [Nadine Spychala](https://nadinespy.github.io/about-me/), and will be instructed by both me and [Rousslan Dossa](https://dosssman.github.io/). 💥🚀
 
 ## How is this tutorial motivated - why collaboration and best research software practices in the first place?
 
@@ -78,7 +78,7 @@ This tutorial equips you with a solid foundation for working on software develop
 
 Some of you will likely have written much more complex code than the one you’ll encounter in this tutorial, yet we call the skills taught “intermediate”, because for code development in teams, you need more than just the right tools and languages – you need a strategy (best practices) for how you’ll use these tools _as a team_, or at least for potential re-use by people outside your team (that may very well consist only of you). Thus, it’s less about the complexity of the code as such within a self-contained environment, and more about the complexity that arises due to other people either working on it, too, or re-using it for their purposes. 
 
-**A disclaimer**: rather than this being a tutorial about how to do collaborative research software engineering with a particular Python lens, we use **Python as a vehicle to convey fairly general RSE principles. Skills and tools taught here, while Python-specific, are transferable to other similar tools and programming languages.
+**Disclaimer**: rather than this being a tutorial about how to do collaborative research software engineering with a particular Python lens, we use **Python as a vehicle to convey fairly general research software engineering principles. Skills and tools taught here, while Python-specific, are transferable to other similar tools and programming languages.
 
 ## Whom this tutorial is for
 The best way to check whether this tutorial is for you is to browse its contents in the [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn).
@@ -113,7 +113,7 @@ It is suitable for all career levels – from students to (very) senior research
   <body>
     <!-- This is the markup of your box, in simpler terms the content structure. -->
     <div class="boxed5"  >
-     If you’re keen on learning how to restructure existing code such that it is more robust, reusable and maintainable, automate the process of testing and verifying software correctness, and collaboratively work with others in a way that mimics a typical software development process within a team, then **we’re looking forward to you**!
+     If you’re keen on learning how to restructure existing code such that it is more robust, reusable and maintainable, automate the process of testing and verifying software correctness, and collaboratively work with others in a way that mimics a typical software development process within a team, then *we’re looking forward to you*!
     </div>
   </body>
 </html>
@@ -129,4 +129,11 @@ It is suitable for all career levels – from students to (very) senior research
 ## Acknowledgments
 I am grateful to [Matthew Bluteau](https://www.software.ac.uk/about/fellows/matthew-bluteau) as well as [Iain Barrass](https://www.software.ac.uk/about/fellows/iain-barrass) who kindly gave me some feedback on the tutorial.
 
+I want to thank [Masami Yamaguchi](https://www.linkedin.com/in/masami-yamaguchi-93678558/) for giving input on organizational matters.
+
 I am also grateful to the [Software Sustainability Institute](https://www.software.ac.uk/) which supports this tutorial via my Fellowship.
+
+Finally, I am very grateful to [Rousslan Dossa](https://dosssman.github.io/) who contributes his skills and expertise by co-instructing the tutorial, and giving valuable input on its content. I am very grateful for the time that he is willing to dedicate to this event, thereby supporting the adoption of best practices in research software engineering. 🙏🌺
+
+
+
