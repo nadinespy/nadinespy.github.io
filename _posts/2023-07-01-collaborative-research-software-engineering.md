@@ -11,10 +11,12 @@ tags:
 ---
 
 
-### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo
+### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo<br>
+<br>
 
-
-<span style="font-size: 20px;">Hello, welcome to the tutorial’s website!.</span> 🍀😊 
+<span style="color:#2E8B57">**Hello, welcome to the tutorial’s website!**</span>
+<span style="font-size: 20px;">**Hello, welcome to the tutorial’s website!**.</span> 🍀🙂 
+<span style="font-size: 20px; color:#2E8B57">**Hello, welcome to the tutorial’s website!**.</span> 🍀🙂 
 
 Here, you’ll get an overview on 
 * how the tutorial is motivated, 
@@ -28,26 +30,26 @@ This is a hybrid event – you can participate online or in-person. In order to 
 
 **You can still benefit from this tutorial’s material by going through it yourself** – it is fully documented and includes explanations, code, exercises and solutions, and further resources in this [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn) that will be used throughout the event. You may even reuse the material for your own purposes (read the licence at the end of this main document for that matter).
 
-This tutorial has been developed by me, [Nadine Spychala](https://nadinespy.github.io/), and will be instructed by both me and [Rousslan Dossa](https://dosssman.github.io/). :boom::rocket:
+This tutorial has been developed by me, [Nadine Spychala](https://nadinespy.github.io/), and will be instructed by both me and [Rousslan Dossa](https://dosssman.github.io/). 💥🚀
 
 ## How is this tutorial motivated - why collaboration and best research software practices in the first place?
 
-In science, we often want or need to reproduce results to **build knowledge incrementally**. 
-* If, for some reason, results can't be reproduced, we at least want to **understand the steps taken** to arrive at the results, i.e., have transparency on the tools used, code written, computations done, and anything else that has been relevant for generating a given research result.
-* However, very often, the steps taken - and particularly the **code** written -, for generating scientific results are **not available**, and/or **not readily implementable**, and/or **not sufficiently understandable**. 
+In science, we often want or need to reproduce results to build knowledge incrementally. 
+* If, for some reason, results can't be reproduced, we at least want to understand the steps taken to arrive at the results, i.e., have transparency on the tools used, code written, computations done, and anything else that has been relevant for generating a given research result.
+* However, very often, the steps taken - and particularly the code written -, for generating scientific results are not available, and/or not readily implementable, and/or not sufficiently understandable. 
 
-The consequences are:
-* **Redundant**, or, at worst, **wasted work**, if reproduction of results is essential, but not possible. This, in the grand scheme of things, greatly slows down scientific progress. 
-* Code that is not designed to be possibly re-used – and thus scrutinized by others – runs the risk of being flawed and therefore, in turn, produce, **flawed results**. 
-* it **hampers collaboration** – something that becomes increasingly important as 
+**The consequences are**:
+* redundant, or, at worst, wasted work, if reproduction of results is essential, but not possible. This, in the grand scheme of things, greatly slows down scientific progress, 
+* code that is not designed to be possibly re-used – and thus scrutinized by others – runs the risk of being flawed and therefore, in turn, produce, flawed results,
+* it hampers collaboration – something that becomes increasingly important as 
   - people from all over the world become more inter-connected, 
   - more diversified and specialized knowledge is produced (such that different "parts" need to come together to create a coherent "whole"), 
   - the mere amount of people working in science increases,
   - many great things can't be achieved alone. 
 
-To manage those developments well and avoid working in silos, it is important to have **structures** at place that **enable people to join forces**, and respond to and integrate each other’s work well - we need more teamwork.
+To manage those developments well and avoid working in silos, it is important to have structures at place that enable people to join forces, and respond to and integrate each other’s work well - we need more teamwork.
 
-**Why is it difficult to establish collaborative and best coding practices?** For cultural/scientific practice reasons, and the way academia has set up its **incentives** (in terms of # of papers where authors are given credit as _individuals_, and prestige of journals plays a role), special value is placed on individual rather than collaborative research outputs. It also discourages doing things right rather than quick-and-dirty. This needs to change. 
+**Why is it difficult to establish collaborative and best coding practices?** For cultural/scientific practice reasons, and the way academia has set up its incentives (in terms of # of papers where authors are given credit as _individuals_, and prestige of journals plays a role), special value is placed on individual rather than collaborative research outputs. It also discourages doing things right rather than quick-and-dirty. This needs to change. 
 
 ## What you’ll learn
 
@@ -79,7 +81,7 @@ This tutorial equips you with a solid foundation for working on software develop
 
 Some of you will likely have written much more complex code than the one you’ll encounter in this tutorial, yet we call the skills taught “intermediate”, because for code development in teams, you need more than just the right tools and languages – you need a strategy (best practices) for how you’ll use these tools _as a team_, or at least for potential re-use by people outside your team (that may very well consist only of you). Thus, it’s less about the complexity of the code as such within a self-contained environment, and more about the complexity that arises due to other people either working on it, too, or re-using it for their purposes. 
 
-A disclaimer: rather than this being a tutorial about how to do collaborative research software engineering with a particular Python lens, we use **Python as a vehicle to convey fairly general RSE principles**. Skills and tools taught here, while Python-specific, are transferable to other similar tools and programming languages.
+**A disclaimer**: rather than this being a tutorial about how to do collaborative research software engineering with a particular Python lens, we use **Python as a vehicle to convey fairly general RSE principles. Skills and tools taught here, while Python-specific, are transferable to other similar tools and programming languages.
 
 ## Whom this tutorial is for
 The best way to check whether this tutorial is for you is to browse its contents in the [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn).
@@ -108,7 +110,6 @@ It is suitable for all career levels – from students to (very) senior research
         padding: 10px;
         border-radius: 10px;
         align-self: right;
-        float: right;
       }
     </style>
   </head>
