@@ -11,9 +11,8 @@ tags:
 ---
 
 
-### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo<br>
+### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo
 <br>
-
 <span style="font-size: 25px; color:#2E8B57">**Hello, welcome to the tutorial’s website!**</span> 🍀🙂 
 
 Here, you’ll get an overview on 
