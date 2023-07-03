@@ -10,6 +10,19 @@ tags:
   - snippets<a name="collaboration_feedback_help"></a>
 ---
 
+---
+output:
+  html_document:
+    keep_md: true
+
+title: "Collaboration in Science: Happier People ↔  Better Research"
+date: 2023-05-25
+permalink: /posts/2023/05/collaboration-in-science-happier-people-better-research/
+tags:
+  - snippets<a name="collaboration_feedback_help"></a>
+---
+
+
 
 ### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo
 <br>
@@ -90,7 +103,7 @@ This tutorial is targeted to anyone who
 
 It is suitable for all career levels – from students to (very) senior researchers for whom writing code is part of their job, and who either are eager to up-skill and learn things anew, or would like to have a proper refresh and/or new perspectives on research software development. 
 
-<html align="right" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -106,7 +119,6 @@ It is suitable for all career levels – from students to (very) senior research
         width: 700px;
         padding: 10px;
         border-radius: 10px;
-        align-self: right;
       }
     </style>
   </head>
