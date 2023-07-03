@@ -10,20 +10,6 @@ tags:
   - snippets<a name="collaboration_feedback_help"></a>
 ---
 
----
-output:
-  html_document:
-    keep_md: true
-
-title: "Collaboration in Science: Happier People ↔  Better Research"
-date: 2023-05-25
-permalink: /posts/2023/05/collaboration-in-science-happier-people-better-research/
-tags:
-  - snippets<a name="collaboration_feedback_help"></a>
----
-
-
-
 ### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo
 <br>
 <span style="font-size: 25px; color:#2E8B57">**Hello, welcome to the tutorial’s website!**</span> 🙂🍀 
