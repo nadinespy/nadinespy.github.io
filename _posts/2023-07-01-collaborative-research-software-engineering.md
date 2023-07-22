@@ -71,8 +71,9 @@ This tutorial equips you with a solid foundation for working on software develop
 * object-oriented programming, and 
 * functional programming.
 
-**With respect to improving software and preparing it for reuse**, you’ll hear about
-* code review, and
+**With respect to working on software with - and for - others**, you’ll hear about
+* collaboratively developing software on GitHub (using pull requests),
+* application programming interfaces,
 * packaging code for release and distribution.
 
 Some of you will likely have written much more complex code than the one you’ll encounter in this tutorial, yet we call the skills taught “intermediate”, because for code development in teams, you need more than just the right tools and languages – you need a strategy (best practices) for how you’ll use these tools _as a team_, or at least for potential re-use by people outside your team (that may very well consist only of you). Thus, it’s less about the complexity of the code as such within a self-contained environment, and more about the complexity that arises due to other people either working on it, too, or re-using it for their purposes. 
