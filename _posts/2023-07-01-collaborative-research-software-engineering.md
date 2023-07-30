@@ -47,7 +47,7 @@ The **consequences** are:
 
 To manage those developments well and avoid working in silos, it is important to have structures at place that enable people to join forces, and respond to and integrate each other’s work well - we need more teamwork.
 
-**Why is it difficult to establish collaborative and best coding practices?** For cultural/scientific practice reasons, and the way academia has set up its incentives (in terms of # of papers where authors are given credit as _individuals_, and prestige of journals plays a role), special value is placed on individual rather than collaborative research outputs. It also discourages doing things right rather than quick-and-dirty. This needs to change. 
+**Why is it difficult to establish collaborative and best coding practices?** For cultural/scientific practice reasons, and the way academia has set up its incentives (in terms of # of papers where authors are given credit as _individuals_, and prestige of journals plays a role), special value is placed on individual rather than collaborative research outputs. It also discourages doing things right - which takes time - rather than quick-and-dirty. This needs to change. 
 
 ## What you’ll learn
 
