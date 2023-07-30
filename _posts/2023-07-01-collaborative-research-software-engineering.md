@@ -22,11 +22,11 @@ Here, you’ll get an overview on
       
 Once you’ve read through all of it and made up your mind whether you’d like to participate, you can [RSVP via this link](https://docs.google.com/forms/d/e/1FAIpQLSdW1-Ea1W7uX_3GqGXSkXCFEhxjZ4Xm1yyanDv8TQzvQn4AUg/viewform).
 
-If you decide to participate, please read carefully read sections 0.1-0.6 in the [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn/edit) which we will use throughout the event. It is essential to have done so before starting the tutorial.  
+If you decide to participate, please read carefully read sections 0.1-0.6 in the [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn) which we will use throughout the event. It is essential to have done so before starting the tutorial.  
 
 This is a hybrid event – you can participate online or in-person. In order to take part, **you will need to have registered for the [Artificial Life conference](https://2023.alife.org/)** (see the conference’s announcement of the tutorial on the conference page [here](https://2023.alife.org/programme/tutorials/) – 8th tutorial from the top –, though it is an outdated description).
 
-**You can still benefit from this tutorial’s material by going through it yourself** – it is fully documented and includes explanations, code, exercises and solutions, and further resources in this [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn/edit). You may even reuse the material for your own purposes (read the licence at the end of this main document for that matter).
+**You can still benefit from this tutorial’s material by going through it yourself** – it is fully documented and includes explanations, code, exercises and solutions, and further resources in this [HackMD main document](https://hackmd.io/@nadinespy/rkteKiVDn). You may even reuse the material for your own purposes (read the licence at the end of this main document for that matter).
 
 This tutorial has been developed and organized by me, [Nadine Spychala](https://nadinespy.github.io/about-me/), and will be instructed by both me and [Rousslan Dossa](https://dosssman.github.io/). 💥🚀
 
