@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm Nadine, regular runner and occasional scientist. 
-In this blog, I want to share my work, thoughts, tools, and other bits of knowledge that have a some chance of being useful or interesting to others. 
+I'm Nadine, a scientist, research software engineer, photographer and ultra mountain runner.  
+In this blog, I want to share my work, thoughts, tools, art, and other bits of knowledge that have some chance of being useful or interesting to others. 
 
 
