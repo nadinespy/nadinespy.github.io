@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm Nadine, a scientist, research software engineer, photographer and ultra mountain runner.  
-In this blog, I want to share my work, thoughts, tools, art, and other bits of knowledge that have some chance of being useful or interesting to others. 
+I'm Nadine, I do science, research software engineering, photography and ultra mountain running. 
+In this blog, I want to share my work, thoughts, tools, art, and other bits of knowledge that have some chance of being useful or interesting to others. Read more about my work [here] (https://nadinespy.github.io/about-me/). 
 
 
