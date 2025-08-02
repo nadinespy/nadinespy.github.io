@@ -12,7 +12,7 @@ I'm Nadine, a software developer and computational scientist with experience in 
 
 I'm also an ultra mountain runner and engage in photography.
 
-In this blog, I share my work, thoughts, tools, art, and wisdom. Read more about me [here](https://nadinespy.github.io/about-me/). 
+In this blog, I share my work, thoughts, tools, art, and wisdom. Read (a lot) more about me [here](https://nadinespy.github.io/about-me/). 
 
 
 
