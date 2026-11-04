@@ -14,6 +14,14 @@ I'm also an ultra mountain runner and engage in photography.
 
 In this blog, I share my work, thoughts, tools, art, and wisdom. Read (a lot) more about me [here](https://nadinespy.github.io/about-me/). 
 
+## Latest posts
+
+{% for post in site.posts limit:3 -%}
+* {{ post.date | date: "%-d %B %Y" }} – [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
+
+[Browse all posts →]({{ '/year-archive/' | relative_url }})
+
 
 
 
