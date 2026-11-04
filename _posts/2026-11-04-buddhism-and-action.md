@@ -89,7 +89,7 @@ hr {
 <figure class="landscape">
   <img src="/images/01_505A7647_01_01.jpg" alt="Autumn woodland with copper and green foliage among dark trunks." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Along the River Avon. (CC-BY-SA 4.0)
+    Along the River Avon, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -121,7 +121,7 @@ Not everything that looks like “acting” belongs on this continuum. A robot v
 <figure class="landscape">
   <img src="/images/02_505A7665_01_01.jpg" alt="Leaf-covered path through a green glade beneath dark, ivy-clad trees." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Along the River Avon. (CC-BY-SA 4.0)
+    Along the River Avon, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -137,7 +137,7 @@ The potential disagreement lies elsewhere. Dzogchen describes awakened action as
 <figure class="landscape">
   <img src="/images/03_505A7649_01_06.jpg" alt="Bright copper leaves against dark woodland." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Along the River Avon. (CC-BY-SA 4.0)
+    Along the River Avon, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -164,7 +164,7 @@ Two things follow. In principle, freedom from clinging is always a matter of deg
 <figure class="landscape">
   <img src="/images/04_505A7676_01.jpg" alt="Track strewn with fallen leaves, curving through dark woodland." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Along the River Avon. (CC-BY-SA 4.0)
+    Along the River Avon, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -188,7 +188,7 @@ One might ask whether the fuel I’m defending is simply chanda – chanda for a
 <figure class="landscape">
   <img src="/images/05_505A7650_01_01.jpg" alt="Dim autumn woodland with a patch of russet foliage." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Along the River Avon. (CC-BY-SA 4.0)
+    Along the River Avon, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -212,7 +212,7 @@ I’ve argued that wise action may require not only some, but strong clinging. T
 <figure class="landscape">
   <img src="/images/06_505A7695_01.jpg" alt="Wet lane running past a tall pale building, between dark trees." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Along the River Avon. (CC-BY-SA 4.0)
+    Along the River Avon, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -234,7 +234,7 @@ When we seriously think about acting and bringing positive change into our perso
 <figure class="landscape">
   <img src="/images/07_505A7651_01.jpg" alt="Dense russet and green autumn foliage." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Along the River Avon. (CC-BY-SA 4.0)
+    Along the River Avon, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -258,7 +258,7 @@ So the arbiters considered above – values, rules, the reduction of suffering, 
 <figure class="landscape">
   <img src="/images/08_505A7747_01.jpg" alt="Twisting branches with bright patches of moss." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Dartmoor National Park. (CC-BY-SA 4.0)
+    Dartmoor National Park, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -280,7 +280,7 @@ Acceptance-practice can not only stop short of reconstruction, but can also be m
 <figure class="landscape">
   <img src="/images/09_505A7754_02.jpg" alt="White water on a river, seen through bare branches." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Dartmoor National Park. (CC-BY-SA 4.0)
+    Dartmoor National Park, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -304,7 +304,7 @@ Importing is not the problem. Every Buddhism has been a hybrid: Tibetan Buddhism
 <figure class="portrait">
   <img src="/images/10_505A7812_01.jpg" alt="Moss-covered boulders in deep shade." style="width: 467px; max-width: 100%; height: auto;" />
   <figcaption>
-    Dartmoor National Park. (CC-BY-SA 4.0)
+    Dartmoor National Park, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -322,7 +322,7 @@ EA has its own bubbles: it can be too narrowly focused on quantifiable metrics a
 <figure class="landscape">
   <img src="/images/11_505A7760.jpg" alt="Tangle of mossy branches and pale bare twigs." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Dartmoor National Park. (CC-BY-SA 4.0)
+    Dartmoor National Park, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -338,7 +338,7 @@ I’m not asking anyone to abandon the truth (and the good parts) of their own b
 <figure class="landscape">
   <img src="/images/12_505A7806_02.jpg" alt="Moss-covered trunks rising above ferns." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Dartmoor National Park. (CC-BY-SA 4.0)
+    Dartmoor National Park, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -362,7 +362,7 @@ Thus, the ambition may shift: not finding the one framework that synthesises all
 <figure class="landscape">
   <img src="/images/13_505A7796_10.jpg" alt="Close-up of bare twigs, moss and fallen yellow leaves." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
-    Dartmoor National Park. (CC-BY-SA 4.0)
+    Dartmoor National Park, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
@@ -384,7 +384,7 @@ Meditation, psychotherapy, the empirical habit of testing and relational practic
 <figure class="portrait">
   <img src="/images/14_505A7845.jpg" alt="Moss-covered tree trunks in a dark forest." style="width: 467px; max-width: 100%; height: auto;" />
   <figcaption>
-    Dartmoor National Park. (CC-BY-SA 4.0)
+    Dartmoor National Park, Devon. (CC-BY-SA 4.0)
     <br>
   </figcaption>
 </figure>
