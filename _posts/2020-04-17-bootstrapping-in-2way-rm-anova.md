@@ -5,6 +5,7 @@ output:
     
 title: "A bootstrapping function for a two-way mixed effects ANOVA"
 date: 2020-04-20
+excerpt: "How to use bootstrapping for statistical testing in a two-way mixed effects model, with a function for doing it."
 permalink: /posts/2020/04/bootstrapping-function-for-2way-mixed-effects-ANOVA/
 tags:
   - snippets
