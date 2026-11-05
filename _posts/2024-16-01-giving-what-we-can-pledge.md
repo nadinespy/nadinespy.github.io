@@ -51,7 +51,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/04_IMG_1510_01.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
+  <img src="/images/04_IMG_1510_01.jpg" alt="Small figures on a dark hilltop, silhouetted against the sun breaking through clouds." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
     Hollingbury Golf Course, Brighton (UK). (CC-BY-SA 4.0)
     <br>

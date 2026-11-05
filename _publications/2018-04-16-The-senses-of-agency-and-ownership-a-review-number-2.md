@@ -9,7 +9,7 @@ permalink: /publication/2020-04-16-The-senses-of-agency-and-ownership-a-review-n
 excerpt: ''
 date: 2018-04-16
 venue: 'Frontiers in Psychology'
-paperurl: 'https://www.frontiersin.org/articles/10.3389/fnhum.2019.00461/full'
+paperurl: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00535/full'
 citation: 'Braun, N., Debener, S., Spychala, N., Bongartz, E., Sörös, P., Müller, H. H., & Philipsen, A. (2018). The senses of agency and ownership: a review. Frontiers in psychology, 9, 535.'
 ---
 

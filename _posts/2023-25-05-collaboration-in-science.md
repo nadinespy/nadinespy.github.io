@@ -70,6 +70,19 @@ Probably, the way a great portion of scientific results are produced and communi
 
 Being the sole investigator is an unfortunate situation: the risk of being too confident and ignoring serious flaws in their research is real, and so is being trapped in a bubble with little to no self-correcting mechanisms. High-level (infrequent) feedback from folks who otherwise are not deeply engaged in the project can’t compensate for mistakes in the actual day-to-day work, e.g., in code or other modes of implementation, in designing and carrying out experiments, in analyses or mathematical proofs, or in lines of reasoning that would become apparent only if someone is strongly involved with the material. Over the years, I have noticed that while everyone in academia is terrified of the potential flaws that remain undiscovered in their work, everyone equally accepts and/or ignores this (willingly or unwillingly) – because that’s the practice, and it’s effortful to go against it. 
 
+<style>
+  /* Keep the boxes inside the page on narrow screens, and stack them above the text on phones. */
+  [class^="boxed"] {
+    max-width: calc(100% - 42px);
+  }
+  @media (max-width: 600px) {
+    [class^="boxed"] {
+      float: none !important;
+      width: auto !important;
+    }
+  }
+</style>
+
 <html align="left" lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -155,7 +168,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01a_IMG_2365.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
+  <img src="/images/01a_IMG_2365.jpg" alt="Dark mountain ridge in patchy sunlight beneath heavy rain clouds." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
     Somewhere on the Snowdon Horseshoe, Wales. (CC-BY-SA 4.0)
     <br>
@@ -285,7 +298,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01b_IMG_6490_03.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
+  <img src="/images/01b_IMG_6490_03.jpg" alt="Dark conifer trunks on a woodland floor covered in orange leaves." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
     Ashdown Forest, East Sussex. (CC-BY-SA 4.0)
     <br>
@@ -391,7 +404,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01c_IMG_2302_01_01.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
+  <img src="/images/01c_IMG_2302_01_01.jpg" alt="View from rocks down into a misty valley with a small lake and patches of yellow grass." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
     Rhinog Fawr, Wales. (CC-BY-SA 4.0)
     <br>
@@ -558,7 +571,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01d_IMG_6507.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
+  <img src="/images/01d_IMG_6507.jpg" alt="Leaf-covered forest track in low sunlight, between dark trees." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
     Ashdown Forest, East Sussex. (CC-BY-SA 4.0)
     <br>
@@ -716,7 +729,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01e_DSCF3231_01.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
+  <img src="/images/01e_DSCF3231_01.jpg" alt="Rusty metal fence on a grassy mountain plateau, with cloud-covered peaks beyond." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
     The Saddle, next to Forcan Ridge, Scotland. (CC-BY-SA 4.0)
     <br>
@@ -957,7 +970,7 @@ hr {
 </style>
 
 <figure>
-  <img src="/images/01f_DSCF3632_01_01.jpg" alt="MarineGEO circle logo" style="height: 469px; width: 719px;" />
+  <img src="/images/01f_DSCF3632_01_01.jpg" alt="Narrow path winding through grassy sand dunes under a grey sky." style="width: 719px; max-width: 100%; height: auto;" />
   <figcaption>
     Sandwood Bay, Scotland. (CC-BY-SA 4.0)
     <br>

@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I'm Nadine, a research software engineer and interdisciplinary computational scientist with experience in building LLM-based software products, complex systems research, and technical AI safety research. My work draws on 7+ years of experience spanning AI/ML, data science, research, and research software engineering.
+I'm Nadine. I have 7+ years of experience across AI/ML, data science, research and research software engineering. I've built LLM-based software, researched complex systems and worked on technical AI safety.
 
 I'm also an ultra mountain runner and engage in photography.
 
-In this blog, I share my work, thoughts, tools, art, and wisdom. Read (a lot) more about me [here](https://nadinespy.github.io/about-me/). 
+In this blog, I share my work, thoughts and tools. Read (a lot) more about me [here](https://nadinespy.github.io/about-me/). 
 
 ## Latest posts
 

@@ -93,6 +93,19 @@ This tutorial is targeted to anyone who
 
 It is suitable for all career levels – from students to (very) senior researchers for whom writing code is part of their job, and who either are eager to up-skill and learn things anew, or would like to have a proper refresh and/or new perspectives on research software development. 
 
+<style>
+  /* Keep the boxes inside the page on narrow screens, and stack them above the text on phones. */
+  [class^="boxed"] {
+    max-width: calc(100% - 42px);
+  }
+  @media (max-width: 600px) {
+    [class^="boxed"] {
+      float: none !important;
+      width: auto !important;
+    }
+  }
+</style>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
