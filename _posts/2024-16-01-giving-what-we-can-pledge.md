@@ -7,7 +7,8 @@ title: "Giving What I Can"
 date: 2024-01-16
 permalink: /posts/2024/01/giving-what-i-can/
 tags:
-  - snippets<a name="collaboration_feedback_help"></a>
+  - Effective Altruism
+  - giving
 ---
 
 Back in March 2023, I took the [Giving What We Can (GWWC) Pledge](https://www.givingwhatwecan.org/) to donate part of my yearly income – as a doctoral researcher earning ~17000£ in that year –, and recently made my first donation. 

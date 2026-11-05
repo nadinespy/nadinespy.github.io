@@ -8,7 +8,9 @@ date: 2023-05-25
 excerpt: "Shifting from individualistic to collaborative work in academia can improve scientific progress and increase well-being."
 permalink: /posts/2023/05/collaboration-in-science-happier-people-better-research/
 tags:
-  - snippets<a name="collaboration_feedback_help"></a>
+  - science
+  - metascience
+  - collaboration
 ---
 
 ## TL;DR

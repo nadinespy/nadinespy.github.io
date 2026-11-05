@@ -8,7 +8,9 @@ date: 2023-07-01
 excerpt: "A fully documented 90-minute tutorial on collaborative research software engineering in Python, from the Artificial Life conference 2023 in Sapporo."
 permalink: /posts/2023/07/collaborative-research-software-engineering-in-python/
 tags:
-  - snippets<a name="collaboration_feedback_help"></a>
+  - research software
+  - Python
+  - teaching
 ---
 
 ### 90 min tutorial at the Artificial Life conference 2023, 24th July, Sapporo

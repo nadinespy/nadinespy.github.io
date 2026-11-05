@@ -7,12 +7,15 @@ title: "Buddhism and Action: What the Dharma Trains, and What It Leaves Open"
 date: 2026-11-04
 permalink: /posts/2026/11/buddhism-and-action/
 tags:
-  - snippets
+  - Buddhism
+  - meditation
+  - ethics
+  - Effective Altruism
 ---
 
 Buddhism excels at teaching us to loosen our grip on views and our entanglement in the push-and-pull struggle with experience. This post is about what that leaves open. My starting point is a simple question: what does an individual need in order to act, and to act well? The question can, but need not, extend to acting for the world at large, since an individual’s conditions include other people and the world.
 
-This post is published both on [my website](https://nadinespy.github.io/) and on [Substack](https://nadinespy.substack.com/p/buddhism-and-action-what-the-dharma).
+This post is published both here and on [Substack](https://nadinespy.substack.com/p/buddhism-and-action-what-the-dharma).
 
 ## TL;DR
 
