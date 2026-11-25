@@ -42,9 +42,11 @@ hr {
 
 </style>
 
-*And facts don’t reach him. Show him the video, the broken bucket, the smashed car windows, and I don’t think he’d protest. Palestinians don’t have the same rights in his world, so no wrong was done. The part of us that clings to a story about who we are and who is out to get us has authority over what counts as evidence, and over what it means. You can argue with it, scream at it, condemn it. It’s like screaming at an olive tree. The tree doesn’t care. The only thing your rage changes is you.*
+*And facts don’t reach him. Show him the video, the broken bucket, the smashed car windows, and I don’t think he’d dispute what happened. But Palestinians don’t have the same rights in his world, so no wrong was done. The part of us that clings to a story about who we are and who is out to get us has authority over what counts as evidence, and over what it means. You can argue with it, scream at it, condemn it. It’s like screaming at an olive tree. The tree doesn’t care. The only thing your rage changes is you.*
 
-*We come knowing the facts. We leave defeated by how little they can do. But defeat, if we let it land, carries its own lesson. What’s left is to meet the people in front of us – not the ones we wish were there, but the ones who are.*
+*We come believing that facts matter. We leave defeated by how little they can do. But defeat, if we let it land, carries its own lesson. What’s left is to meet the people in front of us – not the ones we wish were there, but the ones who are.*
+
+This post is published both here and on [Substack](https://nadinespy.substack.com/p/what-facts-cant-do).
 
 <figure class="landscape">
   <img src="/images/01_505A5724_01.jpg" alt="Blackened kettle over a small fire between stones." style="width: 719px; max-width: 100%; height: auto;" />
